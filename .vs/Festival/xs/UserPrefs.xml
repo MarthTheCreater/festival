@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.Festival.Shared FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Client/Shared/NavMenu.razor">
     <Files>
-      <File FileName="Festival/Client/Shared/NavMenu.razor" Line="1" Column="1" />
+      <File FileName="Festival/Client/Shared/NavMenu.razor" Line="20" Column="35" />
+      <File FileName="Festival/Server/appsettings.json" Line="12" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,6 +15,12 @@
               <Node name="Shared" expanded="True">
                 <Node name="NavMenu.razor" selected="True" />
               </Node>
+            </Node>
+            <Node name="Festival.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Festival.Shared" expanded="True">
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
