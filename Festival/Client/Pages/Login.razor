@@ -1,0 +1,34 @@
+﻿@page "/login"
+
+    <div style="position:absolute;left:700px;top:70px">
+        <h1>Login</h1>
+    </div>
+
+    <div>
+        <h1>Opret bruger</h1>
+    </div>
+
+    <form action="/signin" method="post">
+
+        <div class="form-group">
+            <p> Fornavn <input id="fornavn" Name="´fornavn" /></p>
+            <p> Efternavn <input id="efternavn" Name="efternavn" /></p>
+            <p> Mail <input id="mail" Name="mail" /></p>
+            <p> mobil <input id="mobil" Name="mobil" /></p>
+            <p> ID-nr <input id="ID" Name="ID" /></p>
+            <p> Kode <input id="kode" Name="kode" /></p>
+            <p> Bekræft kode <input id="kode" Name="kode" /></p>
+        </div>
+        <div class="form-group" style="position:absolute;left:700px;top:120px">
+            <p> Username </p>
+            <input id="username" Name="username" />
+            <p>password</p>
+            <input type="password" id="password" />
+            <p> remember me? <input type="checkbox" id="rememberMe" /> </p>
+            <button type="submit" value="Submit">Submit</button>
+        </div>
+    </form>
+
+    @code {
+
+    }

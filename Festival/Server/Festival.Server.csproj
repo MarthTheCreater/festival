@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.11" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Npgsql" Version="5.0.11" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,4 +16,8 @@
   </ItemGroup>
 
 
+  <ItemGroup>
+    <None Remove="Dapper" />
+    <None Remove="Npgsql" />
+  </ItemGroup>
 </Project>

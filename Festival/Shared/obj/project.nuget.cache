@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qKDwBflJuLLsMqBXobyNmydtaQPfdsORygJOmFZMVYhoVcOFwxVczTEu39eIZpWq9hpomQoSJj5cemefdgY8kQ==",
+  "dgSpecHash": "Pui/FjbVnn7iw8QkWOTX10q9sEudJmkD7pIWk+41BqBWZRvh84ynX7ULoVijceUy+c48p8foV77DfakIMcnpYA==",
   "success": true,
   "projectFilePath": "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/Festival.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/martinjensen/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/npgsql/5.0.11/npgsql.5.0.11.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
   "logs": []
 }

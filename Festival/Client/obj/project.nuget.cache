@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3iG3/cPTTxIvHI3JdRSt+ZZVypPy3uonVbiXX3zveVftFhws0xwKb15sMfCDPTX3q/HMEiga25DTa7XM7hQfTA==",
+  "dgSpecHash": "jqr1aChmnH9ITCbdHmVgporrdc1hmi62HbVD6Uk41l1fz2ODQNFLL0ikQoz1EouhmSwQfNM0qe0kuAnWBxphsQ==",
   "success": true,
   "projectFilePath": "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Festival.Client.csproj",
   "expectedPackageFiles": [
+    "/Users/martinjensen/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.aspnetcore.authorization/5.0.11/microsoft.aspnetcore.authorization.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.aspnetcore.components/5.0.11/microsoft.aspnetcore.components.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.aspnetcore.components.analyzers/5.0.11/microsoft.aspnetcore.components.analyzers.5.0.11.nupkg.sha512",
@@ -28,8 +29,10 @@
     "/Users/martinjensen/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.jsinterop/5.0.11/microsoft.jsinterop.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.jsinterop.webassembly/5.0.11/microsoft.jsinterop.webassembly.5.0.11.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/npgsql/5.0.11/npgsql.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.11/microsoft.netcore.app.runtime.browser-wasm.5.0.11.nupkg.sha512"
   ],
   "logs": []
