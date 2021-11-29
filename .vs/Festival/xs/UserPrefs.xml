@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{3D1A470E-ED06-485C-A388-5DDC0F6F0CA9}|Default">
+  <MonoDevelop.Ide.ItemProperties.Festival.Shared FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Client/Shared/NavMenu.razor">
+    <Files>
+      <File FileName="Festival/Client/Shared/NavMenu.razor" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Festival" expanded="True">
+            <Node name="Festival.Client" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True">
+                <Node name="NavMenu.razor" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Festival.Client FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Festival.Server FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
