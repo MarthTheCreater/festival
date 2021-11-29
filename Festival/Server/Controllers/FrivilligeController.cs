@@ -25,9 +25,9 @@ namespace Sem2project.Server.Controllers
 
         public static IDbConnection OpenConnection(string conne)
         {
-            var con = new NpgsqlConnection(conne);
-            con.Open();
-            return con;
+            var conn = new NpgsqlConnection(conne);
+            conn.Open();
+            return conn;
 
         }
 
