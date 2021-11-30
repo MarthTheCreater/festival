@@ -52,6 +52,19 @@ else
     public Bruger[] brugere;
     public Vagter[] vagterne;
 
+    @*public object LedigVagt(object[] args)
+    {
+        foreach (var vagte in vagterne)
+            if ( vagte.vagterId == 1)
+            {
+                return vagterne.ToList();
+            }
+            else if (vagte.vagterId == 2)
+            {
+                return vagterne.ToList();
+            }
+    }*@
+
     protected override async Task OnInitializedAsync()
     {
         vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
