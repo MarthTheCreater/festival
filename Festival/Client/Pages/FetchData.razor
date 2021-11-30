@@ -9,7 +9,7 @@
 
 <p>This component demonstrates fetching data from the server.</p>
 
-@if (brugere == null)
+@if (vagterne == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -18,17 +18,31 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Navn</th>
+                <th>Mandag</th>
+                <th>Tirsdag</th>
+                <th>Onsdag</th>
+                <th>Torsdag</th>
+                <th>Fredag</th>
+                <th>Lørdag</th>
+                <th>Søndag</th>
                 
+
             </tr>
         </thead>
         <tbody>
-            @foreach (var bruger in brugere)
+            @foreach (var vagter in vagterne)
             {
-                <tr>
-                    <td>@bruger.navn</td>
-                  
-                </tr>
+            <tr>
+                <td style="padding: 10px; border: 3px solid ">
+                    @vagter.beskrivelse<br />
+                    @vagter.starttidspunkt<br />
+                    @vagter.sluttidspunkt<br />
+                    @vagter.kap<br />
+                    @vagter.ledig<br />
+                </td>
+             
+
+            </tr>
             }
         </tbody>
     </table>
@@ -36,10 +50,11 @@ else
 
 @code {
     public Bruger[] brugere;
+    public Vagter[] vagterne;
 
     protected override async Task OnInitializedAsync()
     {
-        brugere = await Http.GetFromJsonAsync<Bruger[]>("Bruger");
+        vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
     }
 
 }

@@ -6,26 +6,35 @@ using System.Threading.Tasks;
 
 namespace Festival.Shared.Models
 {
-    class Vagter : Hold
+    public class Vagter : Hold
     {
         public int vagterId { get; set; }
         public DateTime starttidspunkt { get; set; }
         public DateTime sluttidspunkt { get; set; }
         public string beskrivelse { get; set; }
-        //public int antal { get; set; }
+        public int kap { get; set; }
         public bool ledig { get; set; }
         
 
-        public Vagter(int vagterId, DateTime starttidspunkt, DateTime sluttidspunkt, string beskrivelse, /* int antal,*/ bool ledig)
+        public Vagter(int vagterId, DateTime starttidspunkt, DateTime sluttidspunkt, string beskrivelse, int kap, bool ledig)
         {
             this.vagterId = vagterId;
             this.starttidspunkt = starttidspunkt;
             this.sluttidspunkt = sluttidspunkt;
             this.beskrivelse = beskrivelse;
-            //this.antal = antal;
+            this.kap = kap;
             this.ledig = ledig;
-            
+        }
+        public Vagter()
+        {
 
         }
+
+        //public void LedigVagt()
+        //{
+        //    if this.kap == true {
+
+        //    }
+        //}
     }
 }

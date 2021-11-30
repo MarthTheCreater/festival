@@ -14,12 +14,13 @@ namespace Festival.Server.Controllers
     [Route("[controller]")]
     [ApiController]
 
-    public class HoldController : ControllerBase
+    public class VagterController : ControllerBase
     {
         private readonly string _connection;
-        public HoldController(IConfiguration configuration)
+        public VagterController(IConfiguration configuration)
         {
             _connection = configuration.GetConnectionString("Admin");
+
         }
 
         public static IDbConnection OpenConnection(string conne)
@@ -30,27 +31,14 @@ namespace Festival.Server.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Hold>> GetHold()
+        public async Task<IEnumerable<Vagter>> GetVagter()
         {
             using (var conne = OpenConnection(_connection))
             {
-                var query = @"Select * From hold;";
-                var result = await conne.QueryAsync<Hold>(query);
+                var query = @"Select * From vagter;";
+                var result = await conne.QueryAsync<Vagter>(query);
                 return result.ToList();
             }
         }
-
-        //public object values = 1;
-        //[HttpPost]
-        //public async Task<IEnumerable<Hold>> PostHold()
-        //{
-        //    using (var conne = OpenConnection(_connection))
-        //    {
-        //        var query = @"INSERT INTO hold values ("+values+")";
-        //        var result = await conne.QueryAsync<Hold>(query);
-        //        return result.ToList();
-
-        //    }
-        //}
     }
 }

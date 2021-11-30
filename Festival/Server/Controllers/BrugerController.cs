@@ -28,7 +28,6 @@ namespace Festival.Server.Controllers
             var conn = new NpgsqlConnection(conne);
             conn.Open();
             return conn;
-
         }
 
         [HttpGet]
@@ -41,12 +40,5 @@ namespace Festival.Server.Controllers
                 return result.ToList();
             }
         }
-
-
-
     }
-
-
-   
-    
 }

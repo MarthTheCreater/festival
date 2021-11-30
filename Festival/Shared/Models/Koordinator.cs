@@ -8,14 +8,11 @@ namespace Festival.Shared.Models
 {
     class Koordinator : Bruger
     {
+        public int koordinatorId { get; set; }
 
-        //public Koordinator(string navn, int tlf_nr, string login, string email, int hold_id)
-        //{
-        //    this.navn = navn;
-        //    this.tlf_nr = tlf_nr;
-        //    this.login = login;
-        //    this.email = email;
-        //    this.hold_id = hold_id;
-        //}
+        public Koordinator(int koordinatorId)
+        {
+            this.koordinatorId = koordinatorId;
+        }
     }
 }
