@@ -4,19 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sem2project.Shared.Models
+namespace Festival.Shared.Models
 {
-    class Hold
+    public class Hold
     {
-        public string navn { get; set; }
-        public int opgaver { get; set; }
-        public string antal_fri { get; set; }
+        public int holdId { get; set; }
+        public string holdnavn { get; set; }
+        public string opgave { get; set; }
+        public int antal { get; set; }
 
-        public Hold(string navn, int opgaver, string antal_fri)
+        public Hold(int holdId, string holdnavn, string opgave, int antal)
         {
-            this.navn = navn;
-            this.opgaver = opgaver;
-            this.antal_fri = antal_fri;
+            this.holdId = holdId;
+            this.holdnavn = holdnavn;
+            this.opgave = opgave;
+            this.antal = antal;
+        }
+
+        public Hold()
+        {
+
         }
     }
+
 }

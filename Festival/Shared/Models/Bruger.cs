@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sem2project.Shared.Models
+namespace Festival.Shared.Models
 {
     public class Bruger
     {
@@ -15,8 +15,9 @@ namespace Sem2project.Shared.Models
         public string email { get; set; }
         public int holdId { get; set; }
 
-        public Bruger(string navn, int tlf, string email, int holdId)
+        public Bruger(int brugerId, string navn, int tlf, string email, int holdId)
         {
+            this.brugerId = brugerId;
             this.navn = navn;
             this.tlf = tlf;
             //this.login = login;

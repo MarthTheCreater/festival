@@ -84,7 +84,7 @@ using Festival.Client.Shared;
 #nullable disable
 #nullable restore
 #line 2 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
-using Festival.Shared;
+using Festival.Shared.Models;
 
 #line default
 #line hidden
@@ -98,13 +98,14 @@ using Festival.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
+#line 37 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
        
-    private WeatherForecast[] forecasts;
+    
+    public Hold[] brugere;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        brugere = await Http.GetFromJsonAsync<Hold[]>("Hold");
     }
 
 

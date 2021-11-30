@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sem2project.Shared.Models
+namespace Festival.Shared.Models
 {
     class Koordinator : Bruger
     {

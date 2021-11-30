@@ -644,3 +644,7 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Festival.Client.pdb
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/serviceworkers/wwwroot/service-worker.js
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/service-worker-assets.js
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Kalender.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Kalender.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs

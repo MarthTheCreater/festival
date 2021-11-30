@@ -5,19 +5,18 @@ using Npgsql;
 using System.Data;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using Sem2project.Shared.Models;
+using Festival.Shared.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-
-namespace Sem2project.Server.Controllers
+namespace Festival.Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
 
-    public class FrivilligeController:ControllerBase
+    public class HoldController : ControllerBase
     {
         private readonly string _connection;
-        public FrivilligeController(IConfiguration configuration)
+        public HoldController(IConfiguration configuration)
         {
             _connection = configuration.GetConnectionString("Admin");
 
@@ -28,24 +27,17 @@ namespace Sem2project.Server.Controllers
             var conn = new NpgsqlConnection(conne);
             conn.Open();
             return conn;
-
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Bruger>> Get()
+        public async Task<IEnumerable<Hold>> GetHold()
         {
             using (var conne = OpenConnection(_connection))
             {
-                var query = @"Select * From bruger;";
-                var result = await conne.QueryAsync<Bruger>(query);
+                var query = @"Select * From hold;";
+                var result = await conne.QueryAsync<Hold>(query);
                 return result.ToList();
             }
         }
-
-        
     }
-
-
-   
-    
 }
