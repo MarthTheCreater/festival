@@ -1,34 +1,39 @@
-﻿@page "/login"
+﻿@using Radzen
+@using Radzen.Blazor
 
-    <div style="position:absolute;left:700px;top:70px">
-        <h1>Login</h1>
+@page "/login"
+
+<!--Radzen login page-->
+<div class="row">
+    <div class="col-xl-6">
+        <h3 style="margin-top: 1rem">Login with register</h3>
+        <RadzenCard>
+            <RadzenTemplateForm Data=@("LoginWithRegister")>
+                <RadzenLogin AllowResetPassword="false"
+                             Login=@(args => OnLogin(args, "Login with register"))
+                             Register=@(args => OnRegister("Login with register"))
+                             Style="margin-bottom: 20px;" />
+            </RadzenTemplateForm>
+        </RadzenCard>
+
     </div>
+</div>
 
-    <div>
-        <h1>Opret bruger</h1>
-    </div>
+@code {
 
-    <form action="/signin" method="post">
+    string userName = "admin";
+    string password = "admin";
 
-        <div class="form-group">
-            <p> Fornavn <input id="fornavn" Name="´fornavn" /></p>
-            <p> Efternavn <input id="efternavn" Name="efternavn" /></p>
-            <p> Mail <input id="mail" Name="mail" /></p>
-            <p> mobil <input id="mobil" Name="mobil" /></p>
-            <p> ID-nr <input id="ID" Name="ID" /></p>
-            <p> Kode <input id="kode" Name="kode" /></p>
-            <p> Bekræft kode <input id="kode" Name="kode" /></p>
-        </div>
-        <div class="form-group" style="position:absolute;left:700px;top:120px">
-            <p> Username </p>
-            <input id="username" Name="username" />
-            <p>password</p>
-            <input type="password" id="password" />
-            <p> remember me? <input type="checkbox" id="rememberMe" /> </p>
-            <button type="submit" value="Submit">Submit</button>
-        </div>
-    </form>
 
-    @code {
-
+    void OnLogin(LoginArgs args, string name)
+    {
     }
+
+    void OnRegister(string name)
+    {
+    }
+
+    void OnResetPassword(string value, string name)
+    { 
+    }
+}

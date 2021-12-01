@@ -82,6 +82,20 @@ using Festival.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
+using Radzen.Blazor;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +104,29 @@ using Festival.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 22 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
+       
+
+    string userName = "admin";
+    string password = "admin";
+
+
+    void OnLogin(LoginArgs args, string name)
+    {
+    }
+
+    void OnRegister(string name)
+    {
+    }
+
+    void OnResetPassword(string value, string name)
+    { 
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

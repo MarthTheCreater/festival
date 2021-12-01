@@ -2,7 +2,6 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/bin/Debug/net5.0/Festival.Shared.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/bin/Debug/net5.0/ref/Festival.Shared.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/bin/Debug/net5.0/Festival.Shared.pdb
-/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/Festival.Shared.csproj.AssemblyReference.cache
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/Festival.Shared.GeneratedMSBuildEditorConfig.editorconfig
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/Festival.Shared.AssemblyInfoInputs.cache
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/Festival.Shared.AssemblyInfo.cs
@@ -10,3 +9,4 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/Festival.Shared.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/ref/Festival.Shared.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/Festival.Shared.pdb
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Shared/obj/Debug/net5.0/Festival.Shared.csproj.AssemblyReference.cache

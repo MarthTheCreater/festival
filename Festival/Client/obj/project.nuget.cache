@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jqr1aChmnH9ITCbdHmVgporrdc1hmi62HbVD6Uk41l1fz2ODQNFLL0ikQoz1EouhmSwQfNM0qe0kuAnWBxphsQ==",
+  "dgSpecHash": "D1mArLFpHm+QEeKv4hWZspLw3ewwGwB2WeIN7MDxxBLBaFo1gBtVEViMHbCzku1z5wOkpxEccTTvuPT1aEdL3Q==",
   "success": true,
   "projectFilePath": "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Festival.Client.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/Users/martinjensen/.nuget/packages/microsoft.aspnetcore.components.webassembly/5.0.11/microsoft.aspnetcore.components.webassembly.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.aspnetcore.components.webassembly.devserver/5.0.11/microsoft.aspnetcore.components.webassembly.devserver.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.aspnetcore.metadata/5.0.11/microsoft.aspnetcore.metadata.5.0.11.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.extensions.configuration/5.0.0/microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.extensions.configuration.binder/5.0.0/microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
@@ -30,7 +31,9 @@
     "/Users/martinjensen/.nuget/packages/microsoft.jsinterop/5.0.11/microsoft.jsinterop.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.jsinterop.webassembly/5.0.11/microsoft.jsinterop.webassembly.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/npgsql/5.0.11/npgsql.5.0.11.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/radzen.blazor/3.13.3/radzen.blazor.3.13.3.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/system.linq.dynamic.core/1.2.12/system.linq.dynamic.core.1.2.12.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.11/microsoft.netcore.app.runtime.browser-wasm.5.0.11.nupkg.sha512"

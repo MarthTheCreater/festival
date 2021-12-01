@@ -82,6 +82,21 @@ using Festival.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Shared/NavMenu.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Shared/NavMenu.razor"
+using Radzen.Blazor;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/menu")]
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -89,21 +104,6 @@ using Festival.Client.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 38 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Shared/NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

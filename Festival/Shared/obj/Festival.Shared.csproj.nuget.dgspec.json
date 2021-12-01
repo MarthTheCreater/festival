@@ -45,6 +45,10 @@
             "Npgsql": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[3.13.3, )"
             }
           },
           "imports": [

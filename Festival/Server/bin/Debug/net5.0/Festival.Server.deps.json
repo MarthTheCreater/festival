@@ -38,6 +38,7 @@
           "Festival.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.11",
           "Npgsql": "5.0.11",
+          "Radzen.Blazor": "3.13.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -110,7 +111,7 @@
           "Microsoft.AspNetCore.StaticFiles": "5.0.0.0",
           "Microsoft.AspNetCore.WebSockets": "5.0.0.0",
           "Microsoft.AspNetCore.WebUtilities": "5.0.0.0",
-          "Microsoft.CSharp": "5.0.0.0",
+          "Microsoft.CSharp.Reference": "5.0.0.0",
           "Microsoft.Extensions.Caching.Abstractions": "5.0.0.0",
           "Microsoft.Extensions.Caching.Memory": "5.0.0.0",
           "Microsoft.Extensions.Configuration.Abstractions.Reference": "5.0.0.0",
@@ -436,6 +437,7 @@
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Extensions.Configuration/5.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
@@ -552,6 +554,23 @@
           "lib/net5.0/Npgsql.dll": {}
         }
       },
+      "Radzen.Blazor/3.13.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.11",
+          "Microsoft.AspNetCore.Components.Web": "5.0.11",
+          "Microsoft.CSharp": "4.7.0",
+          "System.Linq.Dynamic.Core": "1.2.12"
+        },
+        "runtime": {
+          "lib/net5.0/Radzen.Blazor.dll": {
+            "assemblyVersion": "3.13.3.0",
+            "fileVersion": "3.13.3.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Radzen.Blazor.dll": {}
+        }
+      },
       "System.IO.Pipelines/5.0.1": {
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
@@ -563,6 +582,17 @@
           "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
         }
       },
+      "System.Linq.Dynamic.Core/1.2.12": {
+        "runtime": {
+          "lib/net5.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.2.12.0",
+            "fileVersion": "1.2.12.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
       "System.Net.Http.Json/5.0.0": {},
       "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
       "Festival.Client/1.0.0": {
@@ -571,6 +601,7 @@
           "Festival.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.11",
           "Npgsql": "5.0.11",
+          "Radzen.Blazor": "3.13.3",
           "System.Net.Http.Json": "5.0.0"
         },
         "runtime": {
@@ -583,7 +614,8 @@
       "Festival.Shared/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.123",
-          "Npgsql": "5.0.11"
+          "Npgsql": "5.0.11",
+          "Radzen.Blazor": "3.13.3"
         },
         "runtime": {
           "Festival.Shared.dll": {}
@@ -1024,7 +1056,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.CSharp/5.0.0.0": {
+      "Microsoft.CSharp.Reference/5.0.0.0": {
         "compile": {
           "Microsoft.CSharp.dll": {}
         },
@@ -2313,6 +2345,13 @@
       "path": "microsoft.aspnetcore.metadata/5.0.11",
       "hashPath": "microsoft.aspnetcore.metadata.5.0.11.nupkg.sha512"
     },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2432,12 +2471,26 @@
       "path": "npgsql/5.0.11",
       "hashPath": "npgsql.5.0.11.nupkg.sha512"
     },
+    "Radzen.Blazor/3.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SU7OlVOko9lRs89NPuLppMIbUxtxqUP+x4so9HIfXFiMIsMY8VjzwerV7mlGlQlyG+2rrM+CaMlHfo0c5pcQwg==",
+      "path": "radzen.blazor/3.13.3",
+      "hashPath": "radzen.blazor.3.13.3.nupkg.sha512"
+    },
     "System.IO.Pipelines/5.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
       "path": "system.io.pipelines/5.0.1",
       "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.2.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wJDLhidcJnLAJeZ4z10YVAxMm4rTW0zlYmUjriJTo4eGLHD5NKZOm6qFabkn5TinbfZ6LM9LeYFPyiQMpRly3Q==",
+      "path": "system.linq.dynamic.core/1.2.12",
+      "hashPath": "system.linq.dynamic.core.1.2.12.nupkg.sha512"
     },
     "System.Net.Http.Json/5.0.0": {
       "type": "package",
@@ -2823,7 +2876,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.CSharp/5.0.0.0": {
+    "Microsoft.CSharp.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

@@ -31,7 +31,9 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/Microsoft.JSInterop.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/Microsoft.JSInterop.WebAssembly.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/Npgsql.dll
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/Radzen.Blazor.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/System.IO.Pipelines.dll
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/System.Linq.Dynamic.Core.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/Festival.Client.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/Festival.Shared.dll
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Server/bin/Debug/net5.0/Festival.Client.pdb
