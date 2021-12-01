@@ -14,9 +14,11 @@ namespace Festival.Shared.Models
         public string beskrivelse { get; set; }
         public int kap { get; set; }
         public bool ledig { get; set; }
+        public int dageId { get; set; }
+        public string dag { get; set; }
         
 
-        public Vagter(int vagterId, DateTime starttidspunkt, DateTime sluttidspunkt, string beskrivelse, int kap, bool ledig)
+        public Vagter(int vagterId, DateTime starttidspunkt, DateTime sluttidspunkt, string beskrivelse, int kap, bool ledig, int dageId, string dag)
         {
             this.vagterId = vagterId;
             this.starttidspunkt = starttidspunkt;
@@ -24,17 +26,12 @@ namespace Festival.Shared.Models
             this.beskrivelse = beskrivelse;
             this.kap = kap;
             this.ledig = ledig;
+            this.dageId = dageId;
+            this.dag = dag;
         }
         public Vagter()
         {
 
         }
-
-        //public void LedigVagt()
-        //{
-        //    if this.kap == true {
-
-        //    }
-        //}
     }
 }

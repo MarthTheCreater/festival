@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Festival.Shared.Models
 {
-    class Koordinator : Bruger
+    public class Koordinator : Bruger
     {
         public int koordinatorId { get; set; }
 
