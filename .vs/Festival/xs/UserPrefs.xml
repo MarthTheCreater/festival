@@ -1,27 +1,29 @@
 ﻿<Properties StartupConfiguration="{3D1A470E-ED06-485C-A388-5DDC0F6F0CA9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Client/Pages/FetchData.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Server/Controllers/BrugerController.cs">
     <Files>
-      <File FileName="Festival/Client/Pages/FetchData.razor" Line="40" Column="40" />
+      <File FileName="Festival/Client/Pages/FetchData.razor" Line="65" Column="1" />
       <File FileName="Festival/Client/Pages/Index.razor" Line="17" Column="1" />
       <File FileName="Festival/Client/Shared/NavMenu.razor" Line="1" Column="1" />
-      <File FileName="Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs" Line="118" Column="1" />
+      <File FileName="Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs" Line="117" Column="1" />
       <File FileName="Festival/Client/Pages/Kalender.razor" Line="1" Column="1" />
       <File FileName="Festival/Shared/Models/Vagter.cs" Line="1" Column="1" />
+      <File FileName="Festival/Server/appsettings.json" Line="3" Column="43" />
+      <File FileName="Festival/Server/Controllers/BrugerController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Festival" expanded="True">
             <Node name="Festival.Client" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="FetchData.razor" selected="True" />
-              </Node>
+              <Node name="Pages" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True" />
             </Node>
             <Node name="Festival.Server" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="BrugerController.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="Festival.Shared" expanded="True">
               <Node name="Models" expanded="True" />
