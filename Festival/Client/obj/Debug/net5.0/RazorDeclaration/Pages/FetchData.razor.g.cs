@@ -103,7 +103,7 @@ using Festival.Shared.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/vagtplan")]
     public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -112,18 +112,7 @@ using Festival.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 52 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
-       
-
-    public string mandag = "mandag";
-
-    
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 65 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
+#line 89 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
        
 
 
@@ -134,21 +123,19 @@ using Festival.Shared.Models;
     public Koordinator[] koordinators;
     public Hold[] holdene;
 
-
-
     
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 107 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
-           
+#line 131 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
+       
 
-protected override async Task OnInitializedAsync()
-{
-    vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
-}
+    protected override async Task OnInitializedAsync()
+    {
+        vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
+    }
 
 
 #line default

@@ -109,7 +109,7 @@
       "url": "_content\/Radzen.Blazor\/Radzen.Blazor.js"
     },
     {
-      "hash": "sha256-pk2ZcGxNw1l8ExMK0rIORb9FzbEiR0Kl2hk+qPeM7qs=",
+      "hash": "sha256-byfD1LmyrYuGaEYcj\/3w9ewq54C\/1P3Hz\/hCFfdaDV8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -917,11 +917,11 @@
       "url": "_framework\/Festival.Shared.pdb"
     },
     {
-      "hash": "sha256-BSlALbV7aT9o23uqZLRjRIJbUyjS3EL7rf2tei8o\/8o=",
+      "hash": "sha256-Jhy5M9BOn09SELfPukKR2rD9XovC6Uo4ldKCwfEFVeg=",
       "url": "_framework\/Festival.Client.dll"
     },
     {
-      "hash": "sha256-6z4kxS033fWH4HX\/lewx7T082tU77siYZro4dZA221M=",
+      "hash": "sha256-FwKzno8epdo+bWdawXV5apwQ35l2\/1a\/Db5tp5jhsYA=",
       "url": "_framework\/Festival.Client.pdb"
     },
     {
@@ -1801,5 +1801,5 @@
       "url": "Festival.Client.bundle.scp.css"
     }
   ],
-  "version": "cwwIo77Q"
+  "version": "tiDf0k+P"
 };

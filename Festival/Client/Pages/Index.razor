@@ -1,7 +1,75 @@
-﻿@page "/"
+﻿@using Radzen
+@using Radzen.Blazor
 
-<h1>Hello, world!</h1>
+@page "/"
+<!--Radzen login page-->
+<div class="row">
+    <div class="col-xl-6">
+        <h3 style="margin-top: 1rem">Login with register</h3>
+        <RadzenCard>
+            <RadzenTemplateForm Data=@("LoginWithRegister")>
+                <RadzenLogin AllowResetPassword="false"
+                             Login=@(args => OnLogin(args, "Login with register"))
+                             Register=@(args => OnRegister("Login with register"))
+                             Style="margin-bottom: 20px;" />
+            </RadzenTemplateForm>
+        </RadzenCard>
 
-Welcome to your new app.
+    </div>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code {
+
+    string textBox1 = "admin";
+    string textBox2 = "admin";
+
+    @*public bool _Login(string Username, string Password, string connection, string TableName)
+    {
+        string _username = Username;
+        string _password = Password;
+        string _Query = "SELECT * FROM'" + TableName + "' WHERE Username='" + _username + "'AND Password='" + _password + "'";
+        string _Connection = connection;
+        SqlConnection Con = new SqlConnection(_Connection);
+        Con.Open();
+        SqlCommand cmd = new SqlCommand(_Query, Con);
+        SqlDataReader Dr = cmd.ExecuteReader();
+        while (Dr.Read())
+        {
+            if (_username == Dr["Username"].ToString() && _password == Dr["Password"].ToString())
+            {
+                return true;
+            }
+        }
+        return false;
+    }*@
+
+
+    private void show(string text)
+    {
+    }
+
+    private void DisplayMessageBoxText()
+    {
+        show("");
+    }
+
+    void OnLogin(LoginArgs args, string name)
+    {
+        string userName = "admin";
+        string password = "admin";
+
+        if((textBox1 == userName) && (textBox2 == password))
+        {
+            DisplayMessageBoxText();
+        }
+
+    }
+
+    void OnRegister(string name)
+    {
+    }
+
+    void OnResetPassword(string value, string name)
+    {
+    }
+}

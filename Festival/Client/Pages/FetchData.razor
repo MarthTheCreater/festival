@@ -1,13 +1,11 @@
-﻿@page "/fetchdata"
+﻿@page "/vagtplan"
 @using Festival.Shared.Models
 
 
 
 @inject HttpClient Http
 
-<h1>Weather forecast</h1>
-
-<p>This component demonstrates fetching data from the server.</p>
+<h1>Vagtplan</h1>
 
 @if (vagterne == null)
 {
@@ -15,56 +13,50 @@
 }
 else
 {
-<table class="table">
-    <thead>
-        <tr>
-            
-                <th>@mandag</th>
-                <th>tirsdag</th>
-                <th>onsdag</th>
-           
-
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mandag</th>
+                <th>Tirsdag</th>
+                <th>Onsdag</th>
+                <th>Torsdag</th>
+                <th>Fredag</th>
+                <th>Lørdag</th>
+                <th>Søndag</th>
             </tr>
-        
-        
-        </thead>
-    <tbody>
-        <tr>
-            @foreach (var vagter in vagterne)
-            {
+
+
+            </thead>
+        <tbody>
+            <tr>
+               
+                @foreach (var vagter in vagterne)
                 {
+                    {
+                <td style="padding: 10px; border: 3px solid ">
+                    <p>Starttid:</p>
+                    @vagter.starttidspunkt<br />
+                    <br />
 
-                    <td style="padding: 10px; border: 3px solid ">
-                        @vagter.dag<br />
-                        @vagter.starttidspunkt<br />
-                        @vagter.sluttidspunkt<br />
+                    <p>Sluttid:</p>
+                    @vagter.sluttidspunkt<br />
+                    <br />
 
-                    </td>
+                    <p>Arbejdsopgave:</p>
+                    @vagter.beskrivelse<br />
+                    <br />
 
+                    <p>Antal frivillige:</p>
+                    @vagter.kap<br />
+                </td>
+                    }
                 }
-
-            }
-        </tr>
-        </tbody>
-    </table>
+            </tr>
+            </tbody>
+        </table>
 }
 
 @code {
-
-    public string mandag = "mandag";
-
-    @*public string dag(string mandag)
-    {
-        foreach (var vagt in vagterne)
-        {
-            if (mandag == vagt.dag)
-            {
-                return ;
-            }
-        }
-    }*@
-
-
     public Bruger[] brugere;
     public Vagter[] vagterne;
     public Dage[] dagene;
@@ -72,28 +64,56 @@ else
     public Koordinator[] koordinators;
     public Hold[] holdene;
 
+    @*public string mandag = "mandag";
 
-
-    @*public async Task fedliste()
+    public void show(List<Vagter> text)
     {
-      foreach (var vagter in vagterne)
+        foreach (var vagt in vagterne)
         {
+                <td style="padding: 10px; border: 3px solid ">
+                    vagt.dag<br />
+                    vagt.starttidspunkt<br />
+                    vagt.sluttidspunkt<br />
+                </td>
+        }
+    }
+    public void liste()
+    {
+        show(vagterne.ToList());
+    }
 
-    <tr>
-
-    <td style="padding: 10px; border: 3px solid ">
-        vagter.beskrivelse<br />
-        vagter.starttidspunkt<br />
-        vagter.sluttidspunkt<br />
-        vagter.kap<br />
-        vagter.ledig<br />
-    </td>
-
-
-    </tr>
-
+    public void dag()
+    {
+        foreach (var vagt in vagterne)
+        {
+            if (vagt.dag == mandag)
+            {
+                show(vagterne.ToList());
+            }
         }
     }*@
+
+    @*public async Task fedliste()
+        {
+          foreach (var vagter in vagterne)
+            {
+
+        <tr>
+
+        <td style="padding: 10px; border: 3px solid ">
+            vagter.beskrivelse<br />
+            vagter.starttidspunkt<br />
+            vagter.sluttidspunkt<br />
+            vagter.kap<br />
+            vagter.ledig<br />
+        </td>
+
+
+        </tr>
+
+            }
+        }
+    *@
 
     @*public object LedigVagt(object[] args)
         {
@@ -104,7 +124,8 @@ else
                         return vagterne.ToList();
                     }
                 }
-        }*@
+        }
+     *@
 
 protected override async Task OnInitializedAsync()
 {
