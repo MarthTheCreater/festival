@@ -109,7 +109,7 @@
       "url": "_content\/Radzen.Blazor\/Radzen.Blazor.js"
     },
     {
-      "hash": "sha256-4RmHFsco9+sUY25qxDtdVWF+tMTWJTRHDQ2C0t4TQtI=",
+      "hash": "sha256-hc0IkLQdP12zSU7UwiVxkQuVGQTcRUEkW3S4K\/oXj04=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -917,11 +917,11 @@
       "url": "_framework\/Festival.Shared.pdb"
     },
     {
-      "hash": "sha256-2EOLpuvnsI2FawOTD4RwdcarM9TYQE+Vv92wOWwoNWY=",
+      "hash": "sha256-b2Fo6C3zpOr1ZnKt0oW2EAPHV44Yw+JzWFb3gKMO1m4=",
       "url": "_framework\/Festival.Client.dll"
     },
     {
-      "hash": "sha256-yLy4MJzAnGEB8WdDP3vi9RNBzyfU34qCO9bIgp9dpl0=",
+      "hash": "sha256-\/ITeNcGQ1NEk2vEBUeZXCeIxmXsIkad23xiUhSk9xOc=",
       "url": "_framework\/Festival.Client.pdb"
     },
     {
@@ -1737,7 +1737,7 @@
       "url": "css\/.DS_Store"
     },
     {
-      "hash": "sha256-F8e4jl6+jNoje9y4Vyb5jEw0qsoSZnl+uWT1jXHYEZ4=",
+      "hash": "sha256-RwaCGeaT5AVBwcIAegYP59C1WMKp1LeYEV9eTuT3rYs=",
       "url": "css\/app.css"
     },
     {
@@ -1809,5 +1809,5 @@
       "url": "Festival.Client.bundle.scp.css"
     }
   ],
-  "version": "u2xYq+Uv"
+  "version": "H\/abhE86"
 };

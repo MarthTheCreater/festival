@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{3D1A470E-ED06-485C-A388-5DDC0F6F0CA9}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Client/Pages/Login.razor">
     <Files>
-      <File FileName="Festival/Client/Pages/Login.razor" Line="38" Column="1" />
+      <File FileName="Festival/Client/Pages/Login.razor" Line="15" Column="7" />
       <File FileName="Festival/Shared/Models/Login.cs" Line="17" Column="1" />
-      <File FileName="Festival/Server/Controllers/LoginController.cs" Line="37" Column="14" />
+      <File FileName="Festival/Server/Controllers/LoginController.cs" Line="49" Column="48" />
+      <File FileName="Festival/Client/Pages/Index.razor" Line="3" Column="1" />
+      <File FileName="Festival/Client/Pages/Kalender.razor" Line="1" Column="1" />
+      <File FileName="Festival/Client/Pages/Counter.razor" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +18,9 @@
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Shared" expanded="True" />
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
             </Node>
             <Node name="Festival.Server" expanded="True">
               <Node name="Controllers" expanded="True" />
@@ -32,6 +37,11 @@
           <Value>CurrentValue2</Value>
           <Value>brugere.email</Value>
           <Value>brugere</Value>
+          <Value>result</Value>
+          <Value>result</Value>
+          <Value>niveau</Value>
+          <Value>email</Value>
+          <Value>message</Value>
         </State>
       </Pad>
     </Pads>
@@ -39,9 +49,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor" relfile="Festival/Client/Pages/Login.razor" line="36" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="default" Name="default">

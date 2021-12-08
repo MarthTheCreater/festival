@@ -4,58 +4,43 @@
 @inject NavigationManager nav
 @inject HttpClient Http
 
-<div class="wrapper fadeInDown">
-    <div id="formContent">
-        Tabs Titles
-        Icon
-        <div class="fadeIn first">
-            <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-        </div>
+<div class="logger">
+    <input type="text" id="login" class="logger" name="email" placeholder="login" @bind="email">
+    <input type="text" id="password" class="logger" name="password" placeholder="password" @bind="password">
+    <input type="submit" class="logger" value="Log In" @onclick="loggin">
+    <p> @message</p>
+</div>
 
-        Login Form
-        <EditForm Model="logger" OnValidSubmit="logincheck">
-            <input type="text" id="login" class="fadeIn second" name="login" @bind-value="email" placeholder="login">
-            <input type="text" id="password" class="fadeIn third" name="login" @bind-value="password" placeholder="password">
-            <input type="submit" class="fadeIn fourth" value="Log In">
-        </EditForm>
-
-        Remind Password
-        <div id="formFooter">
-            
-            <a class="underlineHover" href="#">Forgot Password?</a>
-        </div>
-
-    </div>
-</div>}
 
 @code{
 
-    Login logger = new Login();
+
     public int niveau = 0;
 
-    string message;
+    public string message;
 
-    protected string email { get; set; } = "";
+    public string email;
 
-    protected string password { get; set; } = "";
+    public string password;
 
-    private async void logincheck()
+
+    public async Task loggin()
     {
         niveau = await Http.GetFromJsonAsync<int>($"login/{email}/{password}");
+
         if (niveau == 1)
         {
             nav.NavigateTo("/vagtplan");
         }
-        if(niveau == 2)
+        if (niveau == 2)
         {
-            nav.NavigateTo("/fetchdata");
+            nav.NavigateTo("/counter");
         }
-        else
+        if (niveau == 3)
         {
-            message = "Email eller password er forkert.";
+            nav.NavigateTo("/kalender");
         }
-
+        
     }
-
 }
 

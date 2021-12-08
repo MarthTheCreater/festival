@@ -31,15 +31,22 @@ namespace Festival.Server.Controllers
         }
 
         [HttpGet("{em}/{pw}")]
-        public async Task<int> GetLogin(string em, string pw)
+        public async Task<ActionResult<int>> GetLogin(string em, string pw)
         {
-            using (var conne = OpenConnection(_connection))
+            try
             {
-                var query = @"select compare_login(@email, @password)";
-                var values = new { email = em, password = pw };
+                using (var conne = OpenConnection(_connection))
+                {
+                    var query = @"select compare_login(@email, @password)";
+                    var values = new { email = em, password = pw };
 
-                var result = await conne.QueryAsync<int>(query, values);
-                return result.First();
+                    var result = await conne.QueryAsync<int>(query, values);
+                    return Ok(result.First());
+                }
+            }
+            catch(Exception e)
+            {
+                return StatusCode(500, e.Message);
             }
         }
     }

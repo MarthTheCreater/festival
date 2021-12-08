@@ -83,14 +83,14 @@ using Festival.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
+#line 11 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/_Imports.razor"
 using Radzen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
+#line 12 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/_Imports.razor"
 using Radzen.Blazor;
 
 #line default
@@ -104,55 +104,6 @@ using Radzen.Blazor;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 21 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
-       
-
-    string textBox1 = "admin";
-    string textBox2 = "admin";
-
-    
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 44 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
-       
-
-
-    private void show(string text)
-    {
-    }
-
-    private void DisplayMessageBoxText()
-    {
-        show("");
-    }
-
-    void OnLogin(LoginArgs args, string name)
-    {
-        string userName = "admin";
-        string password = "admin";
-
-        if((textBox1 == userName) && (textBox2 == password))
-        {
-            DisplayMessageBoxText();
-        }
-
-    }
-
-    void OnRegister(string name)
-    {
-    }
-
-    void OnResetPassword(string value, string name)
-    {
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

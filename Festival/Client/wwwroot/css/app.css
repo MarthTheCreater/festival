@@ -53,7 +53,7 @@ a, .btn-link {
 
 /* BASIC */
 
-html {
+/*html {
     background-color: #56baed;
 }
 
@@ -77,13 +77,13 @@ h2 {
     display: inline-block;
     margin: 40px 8px 10px 8px;
     color: #cccccc;
-}
+}*/
 
 
 
 /* STRUCTURE */
 
-.wrapper {
+/*.wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -114,26 +114,26 @@ h2 {
     text-align: center;
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
-}
+}*/
 
 
 
 /* TABS */
 
-h2.inactive {
+/*h2.inactive {
     color: #cccccc;
 }
 
 h2.active {
     color: #0d0d0d;
     border-bottom: 2px solid #5fbae9;
-}
+}*/
 
 
 
 /* FORM TYPOGRAPHY*/
 
-input[type=button], input[type=submit], input[type=reset] {
+/*input[type=button], input[type=submit], input[type=reset] {
     background-color: #56baed;
     border: none;
     color: white;
@@ -195,14 +195,14 @@ input[type=text] {
 
     input[type=text]:placeholder {
         color: #cccccc;
-    }
+    }*/
 
 
 
 /* ANIMATIONS */
 
 /* Simple CSS3 Fade-in-down Animation */
-.fadeInDown {
+/*.fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     -webkit-animation-duration: 1s;
@@ -237,10 +237,10 @@ input[type=text] {
         -webkit-transform: none;
         transform: none;
     }
-}
+}*/
 
 /* Simple CSS3 Fade-in Animation */
-@-webkit-keyframes fadeIn {
+/*@-webkit-keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -305,10 +305,10 @@ input[type=text] {
         -webkit-animation-delay: 1s;
         -moz-animation-delay: 1s;
         animation-delay: 1s;
-    }
+    }*/
 
 /* Simple CSS3 Fade-in Animation */
-.underlineHover:after {
+/*.underlineHover:after {
     display: block;
     left: 0;
     bottom: -10px;
@@ -325,16 +325,16 @@ input[type=text] {
 
     .underlineHover:hover:after {
         width: 100%;
-    }
+    }*/
 
 
 
 /* OTHERS */
 
-*:focus {
+/**:focus {
     outline: none;
 }
 
 #icon {
     width: 60%;
-}
+}*/
