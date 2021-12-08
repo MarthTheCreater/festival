@@ -199,12 +199,12 @@
       "mscorlib.dll": "sha256-heWnofXFSc\/TfAxrWpjQxeuS+nlIOs9YycfI2QGXGM8=",
       "netstandard.dll": "sha256-mbIVAluJ7cAx0vUQshB\/c1zEIK5JcYwIYxo\/BQ\/meRU=",
       "System.Private.CoreLib.dll": "sha256-FrZbEyy47f3RDuj77R5oHUGxSGEDgRRxykTjImrLqfM=",
-      "Festival.Shared.dll": "sha256-SaDgr2rWIBQMqlM81chSax0CwJr3p2YsFmfAvJA1Llo=",
-      "Festival.Client.dll": "sha256-hPN3edLh7aHi7nMRnCSeT6PSvYQUHnXJJXStuSWBuTM="
+      "Festival.Shared.dll": "sha256-QFOmJ7+OziKSnSYaKJ2kXDti8l6zS67L8w6DQyB5VuA=",
+      "Festival.Client.dll": "sha256-2EOLpuvnsI2FawOTD4RwdcarM9TYQE+Vv92wOWwoNWY="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Festival.Client.pdb": "sha256-F6COcKRpcNjJ2elKlHEvH08EnoA5\/YErxFNcAuGd2uM="
+      "Festival.Client.pdb": "sha256-yLy4MJzAnGEB8WdDP3vi9RNBzyfU34qCO9bIgp9dpl0="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-5ttRwTa4Rar530elwLdfGDeH9I9NX9MPyDl6zLi9uug=",

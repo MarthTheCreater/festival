@@ -83,21 +83,29 @@ using Festival.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
+#line 11 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/_Imports.razor"
 using Radzen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
+#line 12 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/_Imports.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/index")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 3 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
+using Festival.Shared.Models;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(LoginLayout))]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,54 +113,42 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 21 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
-       
+#line 31 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
+      
 
-    string textBox1 = "admin";
-    string textBox2 = "admin";
+    Login logger = new Login();
+    public int niveau = 0;
 
-    
+    string message;
 
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 44 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Index.razor"
-       
+    protected string email { get; set; } = "";
 
+    protected string password { get; set; } = "";
 
-    private void show(string text)
+    private async void logincheck()
     {
-    }
-
-    private void DisplayMessageBoxText()
-    {
-        show("");
-    }
-
-    void OnLogin(LoginArgs args, string name)
-    {
-        string userName = "admin";
-        string password = "admin";
-
-        if((textBox1 == userName) && (textBox2 == password))
+        niveau = await Http.GetFromJsonAsync<int>($"{email}/{password}");
+        if (niveau == 1)
         {
-            DisplayMessageBoxText();
+            nav.NavigateTo("/vagtplan");
+        }
+        if(niveau == 2)
+        {
+            nav.NavigateTo("/fetchdata");
+        }
+        else
+        {
+            message = "Email eller password er forkert.";
         }
 
     }
 
-    void OnRegister(string name)
-    {
-    }
-
-    void OnResetPassword(string value, string name)
-    {
-    }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager nav { get; set; }
     }
 }
 #pragma warning restore 1591

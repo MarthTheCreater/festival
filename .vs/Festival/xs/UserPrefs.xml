@@ -1,29 +1,24 @@
 ﻿<Properties StartupConfiguration="{3D1A470E-ED06-485C-A388-5DDC0F6F0CA9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Server/Controllers/BrugerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Client/Pages/Login.razor">
     <Files>
-      <File FileName="Festival/Client/Pages/FetchData.razor" Line="65" Column="1" />
-      <File FileName="Festival/Client/Pages/Index.razor" Line="17" Column="1" />
-      <File FileName="Festival/Client/Shared/NavMenu.razor" Line="1" Column="1" />
-      <File FileName="Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs" Line="117" Column="1" />
-      <File FileName="Festival/Client/Pages/Kalender.razor" Line="1" Column="1" />
-      <File FileName="Festival/Shared/Models/Vagter.cs" Line="1" Column="1" />
-      <File FileName="Festival/Server/appsettings.json" Line="3" Column="43" />
-      <File FileName="Festival/Server/Controllers/BrugerController.cs" Line="1" Column="1" />
+      <File FileName="Festival/Client/Pages/Login.razor" Line="38" Column="1" />
+      <File FileName="Festival/Shared/Models/Login.cs" Line="17" Column="1" />
+      <File FileName="Festival/Server/Controllers/LoginController.cs" Line="37" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Festival" expanded="True">
             <Node name="Festival.Client" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Login.razor" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True" />
             </Node>
             <Node name="Festival.Server" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="BrugerController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="Festival.Shared" expanded="True">
               <Node name="Models" expanded="True" />
@@ -31,13 +26,30 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>CurrentValue1</Value>
+          <Value>CurrentValue2</Value>
+          <Value>brugere.email</Value>
+          <Value>brugere</Value>
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor" relfile="Festival/Client/Pages/Login.razor" line="36" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="default" Name="default">
+      <Items>
+        <StartupItem ItemId="{62929DE0-43B2-49E6-8B37-2480577CBEF1}" ItemName="Festival.Client" ConfigurationId="Festival" />
+        <StartupItem ItemId="{3D1A470E-ED06-485C-A388-5DDC0F6F0CA9}" ItemName="Festival.Server" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.ItemProperties.Festival.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -116,7 +116,7 @@ using Festival.Shared.Models;
        
     public Bruger[] brugere;
     public Vagter[] vagterne;
-    public Dage[] dagene;
+    public Roller[] rollerne;
     public Frivillige[] defrivillige;
     public Koordinator[] koordinators;
     public Hold[] holdene;
@@ -127,8 +127,9 @@ using Festival.Shared.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 125 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
-       
+#line 112 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
+           
+    
 
 protected override async Task OnInitializedAsync()
 {

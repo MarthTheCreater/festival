@@ -1,0 +1,61 @@
+﻿@page "/"
+@layout LoginLayout
+@using Festival.Shared.Models
+@inject NavigationManager nav
+@inject HttpClient Http
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        Tabs Titles
+        Icon
+        <div class="fadeIn first">
+            <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+        </div>
+
+        Login Form
+        <EditForm Model="logger" OnValidSubmit="logincheck">
+            <input type="text" id="login" class="fadeIn second" name="login" @bind-value="email" placeholder="login">
+            <input type="text" id="password" class="fadeIn third" name="login" @bind-value="password" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+        </EditForm>
+
+        Remind Password
+        <div id="formFooter">
+            
+            <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+
+    </div>
+</div>}
+
+@code{
+
+    Login logger = new Login();
+    public int niveau = 0;
+
+    string message;
+
+    protected string email { get; set; } = "";
+
+    protected string password { get; set; } = "";
+
+    private async void logincheck()
+    {
+        niveau = await Http.GetFromJsonAsync<int>($"login/{email}/{password}");
+        if (niveau == 1)
+        {
+            nav.NavigateTo("/vagtplan");
+        }
+        if(niveau == 2)
+        {
+            nav.NavigateTo("/fetchdata");
+        }
+        else
+        {
+            message = "Email eller password er forkert.";
+        }
+
+    }
+
+}
+

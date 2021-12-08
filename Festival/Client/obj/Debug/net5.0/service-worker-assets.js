@@ -109,7 +109,7 @@
       "url": "_content\/Radzen.Blazor\/Radzen.Blazor.js"
     },
     {
-      "hash": "sha256-ChbMUmzWx59cFcuaXAX8L8IMDI+9fBmyNLoObU0cVmg=",
+      "hash": "sha256-4RmHFsco9+sUY25qxDtdVWF+tMTWJTRHDQ2C0t4TQtI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -909,19 +909,19 @@
       "url": "_framework\/dotnet.5.0.11.js"
     },
     {
-      "hash": "sha256-SaDgr2rWIBQMqlM81chSax0CwJr3p2YsFmfAvJA1Llo=",
+      "hash": "sha256-QFOmJ7+OziKSnSYaKJ2kXDti8l6zS67L8w6DQyB5VuA=",
       "url": "_framework\/Festival.Shared.dll"
     },
     {
-      "hash": "sha256-2XGSRzyuNQ2Lu5okAVH+nY0adSqqa1u8Ed1y5hXRzJ4=",
+      "hash": "sha256-GhkMVeZr613xf+oXNy5oDC54oycp4lZ5HdI8iHOG5VU=",
       "url": "_framework\/Festival.Shared.pdb"
     },
     {
-      "hash": "sha256-hPN3edLh7aHi7nMRnCSeT6PSvYQUHnXJJXStuSWBuTM=",
+      "hash": "sha256-2EOLpuvnsI2FawOTD4RwdcarM9TYQE+Vv92wOWwoNWY=",
       "url": "_framework\/Festival.Client.dll"
     },
     {
-      "hash": "sha256-F6COcKRpcNjJ2elKlHEvH08EnoA5\/YErxFNcAuGd2uM=",
+      "hash": "sha256-yLy4MJzAnGEB8WdDP3vi9RNBzyfU34qCO9bIgp9dpl0=",
       "url": "_framework\/Festival.Client.pdb"
     },
     {
@@ -1725,11 +1725,19 @@
       "url": "_framework\/dotnet.5.0.11.js.gz"
     },
     {
-      "hash": "sha256-UPi92c0kOkPhTXeWKqtRVgJociWYb+XwZr0U0aRTELQ=",
+      "hash": "sha256-yFbCOBeaaJ+SGTwMv8NlwQXZJKq5MEUInLFaiOdWouE=",
       "url": "_framework\/Festival.Shared.dll.gz"
     },
     {
-      "hash": "sha256-SO\/fuIIWUxoIu1OABrOpK5n\/AvzxJcg+0H3PT1eutAE=",
+      "hash": "sha256-Marb43cgyisoEa2d504mSNZ\/4rb4OoxWo7Rn1Yoz99Y=",
+      "url": ".DS_Store"
+    },
+    {
+      "hash": "sha256-5Ua8P9dXpOqH44HbRRkAoVbpERZDt91xRSHPDoXBTG8=",
+      "url": "css\/.DS_Store"
+    },
+    {
+      "hash": "sha256-F8e4jl6+jNoje9y4Vyb5jEw0qsoSZnl+uWT1jXHYEZ4=",
       "url": "css\/app.css"
     },
     {
@@ -1801,5 +1809,5 @@
       "url": "Festival.Client.bundle.scp.css"
     }
   ],
-  "version": "rhrBEN2x"
+  "version": "u2xYq+Uv"
 };

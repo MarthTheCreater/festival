@@ -9,15 +9,16 @@ using Festival.Shared.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace Festival.Server.Controllers
 {
     [Route("[controller]")]
     [ApiController]
 
-    public class RollerController : ControllerBase
+    public class LoginController : ControllerBase
     {
         private readonly string _connection;
-        public RollerController(IConfiguration configuration)
+        public LoginController(IConfiguration configuration)
         {
             _connection = configuration.GetConnectionString("Admin");
         }
@@ -29,16 +30,20 @@ namespace Festival.Server.Controllers
             return conn;
         }
 
-        [HttpGet]
-        public async Task<IEnumerable<Roller>> GetHold()
+        [HttpGet("{em}/{pw}")]
+        public async Task<int> GetLogin(string em, string pw)
         {
             using (var conne = OpenConnection(_connection))
             {
-                var query = @"Select * From roller;";
-                var result = await conne.QueryAsync<Roller>(query);
-                return result.ToList();
+                var query = @"select compare_login(@email, @password)";
+                var values = new { email = em, password = pw };
+
+                var result = await conne.QueryAsync<int>(query, values);
+                return result.First();
             }
         }
-
     }
+
+
+    
 }
