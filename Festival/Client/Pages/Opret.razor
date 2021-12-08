@@ -1,0 +1,22 @@
+﻿@page "/opret"
+
+<div class="login">
+    <input type="text" id="navn" class="login" name="navn" placeholder="navn" @bind="navn">
+    <input type="text" id="email" class="login" name="email" placeholder="email" @bind="email">
+    <input type="text" id="tlf" class="login" name="telefonnummer" placeholder="telefonnummer" @bind="tlf">
+    <input type="text" id="password" class="login" name="password" placeholder="password" @bind="password">
+
+    <input type="text" id="adgangsID" class="login" name="adgangsID" placeholder="adgangsID" @bind="adgangsID">
+
+</div>
+
+@code{
+
+    private string email;
+    private string password;
+    private string navn;
+    private string tlf;
+    private string adgangsID;
+
+
+}

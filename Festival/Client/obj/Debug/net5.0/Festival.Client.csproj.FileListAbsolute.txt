@@ -419,7 +419,6 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Counter.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs
-/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Kalender.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Shared/LoginLayout.razor.g.cs
@@ -435,7 +434,6 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/App.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Counter.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/FetchData.razor.g.cs
-/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Kalender.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Shared/LoginLayout.razor.g.cs
@@ -656,3 +654,5 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Festival.Client.pdb
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/serviceworkers/wwwroot/service-worker.js
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/service-worker-assets.js
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Opret.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Opret.razor.g.cs

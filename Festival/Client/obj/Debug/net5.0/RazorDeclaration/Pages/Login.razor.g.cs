@@ -113,21 +113,30 @@ using Festival.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
+#line 17 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
       
-
 
     public int niveau = 0;
 
-    public string message;
+    public string text = "error";
 
     public string email;
 
     public string password;
 
-
-    public async Task loggin()
+    public string textbox()
     {
+        return text;
+
+    }
+    public void opret()
+    {
+        nav.NavigateTo("/opret");
+    }
+
+    public async Task logincheck()
+    {
+
         niveau = await Http.GetFromJsonAsync<int>($"login/{email}/{password}");
 
         if (niveau == 1)
@@ -142,7 +151,10 @@ using Festival.Shared.Models;
         {
             nav.NavigateTo("/kalender");
         }
-        
+        else
+        {
+            textbox();
+        }
     }
 
 #line default
