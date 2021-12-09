@@ -61,7 +61,7 @@
             },
             "Radzen.Blazor": {
               "target": "Package",
-              "version": "[3.13.3, )"
+              "version": "[3.13.5, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
@@ -142,7 +142,7 @@
             },
             "Radzen.Blazor": {
               "target": "Package",
-              "version": "[3.13.3, )"
+              "version": "[3.13.5, )"
             }
           },
           "imports": [

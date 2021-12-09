@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D1mArLFpHm+QEeKv4hWZspLw3ewwGwB2WeIN7MDxxBLBaFo1gBtVEViMHbCzku1z5wOkpxEccTTvuPT1aEdL3Q==",
+  "dgSpecHash": "cwFIVskhWYbwndmmUdNs2o2ZrDzcQhGQIX75ht3vSdS5AsZDMcCEAw4uxfANnDg9h0StPK8m/0etGvsymspI+Q==",
   "success": true,
   "projectFilePath": "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Festival.Client.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "/Users/martinjensen/.nuget/packages/microsoft.jsinterop/5.0.11/microsoft.jsinterop.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/microsoft.jsinterop.webassembly/5.0.11/microsoft.jsinterop.webassembly.5.0.11.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/npgsql/5.0.11/npgsql.5.0.11.nupkg.sha512",
-    "/Users/martinjensen/.nuget/packages/radzen.blazor/3.13.3/radzen.blazor.3.13.3.nupkg.sha512",
+    "/Users/martinjensen/.nuget/packages/radzen.blazor/3.13.5/radzen.blazor.3.13.5.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.linq.dynamic.core/1.2.12/system.linq.dynamic.core.1.2.12.nupkg.sha512",
     "/Users/martinjensen/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",

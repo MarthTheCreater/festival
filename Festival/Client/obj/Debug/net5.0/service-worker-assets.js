@@ -1,43 +1,43 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-RIK61bT1B\/9EzWos1eI6NYysenjDN49AwvCmuomStBA=",
+      "hash": "sha256-VrKUoLs6ey1dcgDdNZIEj298BhCZWVChOt4UkfhBVEs=",
       "url": "_content\/Radzen.Blazor\/css\/dark-base.css"
     },
     {
-      "hash": "sha256-7IaTYquKKmHNgok+PBlujd4CbtN94OK99TMTCPEbS1I=",
+      "hash": "sha256-9pHFAdzDjrJ+XaruJ+fYKzSZDw7jrhQE\/\/xAQXL8Z\/M=",
       "url": "_content\/Radzen.Blazor\/css\/dark.css"
     },
     {
-      "hash": "sha256-dggSC7BQJPdWj39yBdUChmu32NNU6BMFkqmFSPHB3NA=",
+      "hash": "sha256-vmqPB0+eLJEv8C4DCvDd\/4cU32vU8lF41uJ4GPKhwq0=",
       "url": "_content\/Radzen.Blazor\/css\/default-base.css"
     },
     {
-      "hash": "sha256-2mmpy8Zrh3ABOc7xoL5YNcoV+GoR2L67YHcBlICcwvU=",
+      "hash": "sha256-w25mQvSSJElDiwlz2G8eGKNX4\/\/3VX7\/E7FW6PAq+WQ=",
       "url": "_content\/Radzen.Blazor\/css\/default.css"
     },
     {
-      "hash": "sha256-+SMu02du5c6WXEDvxFnf8DB8xRGxSyx\/1ewaTGRl0ME=",
+      "hash": "sha256-SUje5F8uozGAN1lgE3TQ\/OLhiuuFfYAT4QbO33eD6Oc=",
       "url": "_content\/Radzen.Blazor\/css\/humanistic-base.css"
     },
     {
-      "hash": "sha256-2PIwijT5o+K+nDQxdi4sBuTRWx0tYxcLnzloUlTg60w=",
+      "hash": "sha256-yI5xaV+GGinwJQLM\/oKIbhZjwVXFCaAEz7t26v7ylpQ=",
       "url": "_content\/Radzen.Blazor\/css\/humanistic.css"
     },
     {
-      "hash": "sha256-tWzH1k5a1xKlnNVIhZZg2bVcSfm0ZS3iq9uVxlItFCs=",
+      "hash": "sha256-f6CZQ\/WqX+wMpuLt5FbehoJaykuqv7tzxYNuZ8BP3vY=",
       "url": "_content\/Radzen.Blazor\/css\/software-base.css"
     },
     {
-      "hash": "sha256-nAY7Ed2MVG+1lVski+WcI14GUsA4mga03UxeX2jrbgk=",
+      "hash": "sha256-vJBSViPm8q12653FlY6kiS+G6SoUEO2cJKyrSs9fVHA=",
       "url": "_content\/Radzen.Blazor\/css\/software.css"
     },
     {
-      "hash": "sha256-gTPTVN6BkY9nHOnyiIef\/1o7db1gGBqn6R\/HMIqT7Qw=",
+      "hash": "sha256-oF0p\/xuj5StXFUY8bGkUWbhwOf\/yx0qE+3Ha3Kp\/i5s=",
       "url": "_content\/Radzen.Blazor\/css\/standard-base.css"
     },
     {
-      "hash": "sha256-1BG5I2V7wM0jALeVWEevV6oRvIToxdI0TiIh0cUOfmk=",
+      "hash": "sha256-1yvKRy4enJFGGu2KmIWd5gFhnAuPnaXnZlZyRaxY1xE=",
       "url": "_content\/Radzen.Blazor\/css\/standard.css"
     },
     {
@@ -109,7 +109,7 @@
       "url": "_content\/Radzen.Blazor\/Radzen.Blazor.js"
     },
     {
-      "hash": "sha256-\/vOK4ckCs\/1y+6NIGLT7LPcIlRdx1e6btbfKNDXU8Tc=",
+      "hash": "sha256-6omnYoL73Rf7EyohRsYgl4P1LpmRyaGu7bGcGwDze9E=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -209,7 +209,7 @@
       "url": "_framework\/Npgsql.dll"
     },
     {
-      "hash": "sha256-90LqmRcfQxDvZIzrrAKtjzdGYCXLwAFy4zq5zQ2ewLo=",
+      "hash": "sha256-J0+26rD\/Y+mXvTS0BnrspMO6iqe66nqZQAV6TS8RLzY=",
       "url": "_framework\/Radzen.Blazor.dll"
     },
     {
@@ -909,19 +909,19 @@
       "url": "_framework\/dotnet.5.0.11.js"
     },
     {
-      "hash": "sha256-a90lOlPdE\/Zho1v3LEz6haG8IuPu6L8ZGBDtnhVZVXk=",
+      "hash": "sha256-fnzg\/2lXe2J05tUN\/rfwkA3Sz33u8kpcHQ+kL4iVaFU=",
       "url": "_framework\/Festival.Shared.dll"
     },
     {
-      "hash": "sha256-dvEVsiPl+Iuw\/wXqSvR3gmj1JAQRMlPUJvdz4upjzZU=",
+      "hash": "sha256-kz+0jlTAl5CIzTjOjXtToEzq75Oy5GD7Iratp7lJcqs=",
       "url": "_framework\/Festival.Shared.pdb"
     },
     {
-      "hash": "sha256-FuGcob\/dUWLvpAO0SH9FGH\/eacmM0M+EcROv9OrO+tw=",
+      "hash": "sha256-lZM9OeMufmgOmRTbLMToVNKhkDK7eQzT4uIlnp7m41E=",
       "url": "_framework\/Festival.Client.dll"
     },
     {
-      "hash": "sha256-gnVNIPqGNmt9YU8k\/wFqBcZhHvQd5mbAhbOVPX9k+zg=",
+      "hash": "sha256-ixZZwBCQ3DMH59YYuj3ErFCUJsdHFQpqN\/lyLwisvc4=",
       "url": "_framework\/Festival.Client.pdb"
     },
     {
@@ -1025,7 +1025,7 @@
       "url": "_framework\/Npgsql.dll.gz"
     },
     {
-      "hash": "sha256-4f3i2Ifz9FcJlhh3XzomtZFeW50\/HpvNoi6ztiVHVF8=",
+      "hash": "sha256-pK1piyEKsynt2NivW6PluBogOFGWGZkbNvFX\/idlwM4=",
       "url": "_framework\/Radzen.Blazor.dll.gz"
     },
     {
@@ -1725,11 +1725,11 @@
       "url": "_framework\/dotnet.5.0.11.js.gz"
     },
     {
-      "hash": "sha256-xQugxTZfXOHeHF+AK3GGUNjgslk4+qBY8FYKSsjzpU8=",
+      "hash": "sha256-MDrXvEXLouJMLnwVjtbblbiZH7FudPS5QqqRR6nXJe0=",
       "url": "_framework\/Festival.Shared.dll.gz"
     },
     {
-      "hash": "sha256-nZoISgdirQe34kDtLjngt1QvYSANh2P6tpAfXxzGGxw=",
+      "hash": "sha256-Ry7k+uR7k4e3BKLAwod8Y+PTHBEYnqZvhgqMXOoKpOg=",
       "url": ".DS_Store"
     },
     {
@@ -1789,6 +1789,10 @@
       "url": "favicon.ico"
     },
     {
+      "hash": "sha256-v55pqlHnwKnKP5lQ75YimLd2j5VTnHzO18eSloXdHVc=",
+      "url": "grønfest.jpeg"
+    },
+    {
       "hash": "sha256-IpHFcQvs03lh6W54zoeJRG1jW+VnGmwymzxLoXtKX7Y=",
       "url": "icon-512.png"
     },
@@ -1813,5 +1817,5 @@
       "url": "Festival.Client.bundle.scp.css"
     }
   ],
-  "version": "MZREWrmC"
+  "version": "ItBVo3Zh"
 };

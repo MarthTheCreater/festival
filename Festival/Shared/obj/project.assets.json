@@ -163,7 +163,7 @@
           "lib/net5.0/Npgsql.dll": {}
         }
       },
-      "Radzen.Blazor/3.13.3": {
+      "Radzen.Blazor/3.13.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.0",
@@ -543,10 +543,10 @@
         "postgresql.png"
       ]
     },
-    "Radzen.Blazor/3.13.3": {
-      "sha512": "SU7OlVOko9lRs89NPuLppMIbUxtxqUP+x4so9HIfXFiMIsMY8VjzwerV7mlGlQlyG+2rrM+CaMlHfo0c5pcQwg==",
+    "Radzen.Blazor/3.13.5": {
+      "sha512": "DDmg4FmORQUjWzzs/RGWCcGkbcSfB/8icx4x0HIZ1Lzl9VeCIXCPRI9Sijxftg2TJ78ZwQxIHpX3a06qxdt7uA==",
       "type": "package",
-      "path": "radzen.blazor/3.13.3",
+      "path": "radzen.blazor/3.13.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -560,7 +560,7 @@
         "lib/net5.0/Radzen.Blazor.xml",
         "lib/netstandard2.1/Radzen.Blazor.dll",
         "lib/netstandard2.1/Radzen.Blazor.xml",
-        "radzen.blazor.3.13.3.nupkg.sha512",
+        "radzen.blazor.3.13.5.nupkg.sha512",
         "radzen.blazor.nuspec",
         "staticwebassets/Radzen.Blazor.js",
         "staticwebassets/css/dark-base.css",
@@ -689,7 +689,7 @@
     "net5.0": [
       "Dapper >= 2.0.123",
       "Npgsql >= 5.0.11",
-      "Radzen.Blazor >= 3.13.3"
+      "Radzen.Blazor >= 3.13.5"
     ]
   },
   "packageFolders": {
@@ -739,7 +739,7 @@
           },
           "Radzen.Blazor": {
             "target": "Package",
-            "version": "[3.13.3, )"
+            "version": "[3.13.5, )"
           }
         },
         "imports": [

@@ -143,7 +143,7 @@ using Festival.Shared.Models;
             }
             if (niveau == 2)
             {
-                nav.NavigateTo("/counter");
+                nav.NavigateTo("/kort");
             }
             if (niveau == 3)
             {

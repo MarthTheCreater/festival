@@ -38,7 +38,7 @@
           "Festival.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.11",
           "Npgsql": "5.0.11",
-          "Radzen.Blazor": "3.13.3",
+          "Radzen.Blazor": "3.13.5",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -554,7 +554,7 @@
           "lib/net5.0/Npgsql.dll": {}
         }
       },
-      "Radzen.Blazor/3.13.3": {
+      "Radzen.Blazor/3.13.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.11",
           "Microsoft.AspNetCore.Components.Web": "5.0.11",
@@ -563,8 +563,8 @@
         },
         "runtime": {
           "lib/net5.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "3.13.3.0",
-            "fileVersion": "3.13.3.0"
+            "assemblyVersion": "3.13.5.0",
+            "fileVersion": "3.13.5.0"
           }
         },
         "compile": {
@@ -601,7 +601,7 @@
           "Festival.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.11",
           "Npgsql": "5.0.11",
-          "Radzen.Blazor": "3.13.3",
+          "Radzen.Blazor": "3.13.5",
           "System.Net.Http.Json": "5.0.0"
         },
         "runtime": {
@@ -615,7 +615,7 @@
         "dependencies": {
           "Dapper": "2.0.123",
           "Npgsql": "5.0.11",
-          "Radzen.Blazor": "3.13.3"
+          "Radzen.Blazor": "3.13.5"
         },
         "runtime": {
           "Festival.Shared.dll": {}
@@ -2471,12 +2471,12 @@
       "path": "npgsql/5.0.11",
       "hashPath": "npgsql.5.0.11.nupkg.sha512"
     },
-    "Radzen.Blazor/3.13.3": {
+    "Radzen.Blazor/3.13.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SU7OlVOko9lRs89NPuLppMIbUxtxqUP+x4so9HIfXFiMIsMY8VjzwerV7mlGlQlyG+2rrM+CaMlHfo0c5pcQwg==",
-      "path": "radzen.blazor/3.13.3",
-      "hashPath": "radzen.blazor.3.13.3.nupkg.sha512"
+      "sha512": "sha512-DDmg4FmORQUjWzzs/RGWCcGkbcSfB/8icx4x0HIZ1Lzl9VeCIXCPRI9Sijxftg2TJ78ZwQxIHpX3a06qxdt7uA==",
+      "path": "radzen.blazor/3.13.5",
+      "hashPath": "radzen.blazor.3.13.5.nupkg.sha512"
     },
     "System.IO.Pipelines/5.0.1": {
       "type": "package",

@@ -417,7 +417,6 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Festival.Client.MvcApplicationPartsAssemblyInfo.cache
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Festival.Client.RazorComponent.input.cache
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
-/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Counter.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Kalender.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs
@@ -432,7 +431,6 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Festival.Client.TagHelpers.output.cache
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Festival.Client.RazorCoreGenerate.cache
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/App.razor.g.cs
-/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Counter.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/FetchData.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Kalender.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs
@@ -465,7 +463,6 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/Rn+NVsPv.gz
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/COq1TT7K.gz
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/76wfK4bU.gz
-/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/EjWmctUV.gz
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/FkPRSnQw.gz
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/yFleFy4J.gz
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/5P99ZGJP.gz
@@ -660,3 +657,6 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Opsalgstavle.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Hjem.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Opsalgstavle.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/build-gz/Ynejk4vW.gz
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Kort.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Kort.razor.g.cs
