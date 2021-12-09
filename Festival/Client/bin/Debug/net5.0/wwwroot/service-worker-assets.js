@@ -109,7 +109,7 @@
       "url": "_content\/Radzen.Blazor\/Radzen.Blazor.js"
     },
     {
-      "hash": "sha256-Fbbw\/Zg32OuubmLw7Ban6tw\/x2a8GEtjxZJRDXJr+pM=",
+      "hash": "sha256-\/vOK4ckCs\/1y+6NIGLT7LPcIlRdx1e6btbfKNDXU8Tc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -909,19 +909,19 @@
       "url": "_framework\/dotnet.5.0.11.js"
     },
     {
-      "hash": "sha256-QFOmJ7+OziKSnSYaKJ2kXDti8l6zS67L8w6DQyB5VuA=",
+      "hash": "sha256-a90lOlPdE\/Zho1v3LEz6haG8IuPu6L8ZGBDtnhVZVXk=",
       "url": "_framework\/Festival.Shared.dll"
     },
     {
-      "hash": "sha256-GhkMVeZr613xf+oXNy5oDC54oycp4lZ5HdI8iHOG5VU=",
+      "hash": "sha256-dvEVsiPl+Iuw\/wXqSvR3gmj1JAQRMlPUJvdz4upjzZU=",
       "url": "_framework\/Festival.Shared.pdb"
     },
     {
-      "hash": "sha256-fyAb\/lDMAfkf8+97j8TENgRH16t7H5sZDCCNwNkM0rE=",
+      "hash": "sha256-FuGcob\/dUWLvpAO0SH9FGH\/eacmM0M+EcROv9OrO+tw=",
       "url": "_framework\/Festival.Client.dll"
     },
     {
-      "hash": "sha256-c9mntCQugd\/J5Og0yqkZC86hHXDgY2XdYnk93HcvaBM=",
+      "hash": "sha256-gnVNIPqGNmt9YU8k\/wFqBcZhHvQd5mbAhbOVPX9k+zg=",
       "url": "_framework\/Festival.Client.pdb"
     },
     {
@@ -1725,11 +1725,11 @@
       "url": "_framework\/dotnet.5.0.11.js.gz"
     },
     {
-      "hash": "sha256-yFbCOBeaaJ+SGTwMv8NlwQXZJKq5MEUInLFaiOdWouE=",
+      "hash": "sha256-xQugxTZfXOHeHF+AK3GGUNjgslk4+qBY8FYKSsjzpU8=",
       "url": "_framework\/Festival.Shared.dll.gz"
     },
     {
-      "hash": "sha256-Marb43cgyisoEa2d504mSNZ\/4rb4OoxWo7Rn1Yoz99Y=",
+      "hash": "sha256-nZoISgdirQe34kDtLjngt1QvYSANh2P6tpAfXxzGGxw=",
       "url": ".DS_Store"
     },
     {
@@ -1737,7 +1737,7 @@
       "url": "css\/.DS_Store"
     },
     {
-      "hash": "sha256-RwaCGeaT5AVBwcIAegYP59C1WMKp1LeYEV9eTuT3rYs=",
+      "hash": "sha256-eQgwqQTM8hen1uKsjciM1KXA1muXMfvbQZDFfkFqu+M=",
       "url": "css\/app.css"
     },
     {
@@ -1801,6 +1801,10 @@
       "url": "manifest.json"
     },
     {
+      "hash": "sha256-fVMSTy1Bc4GOpoqqu2O6fT9gMQ8AMUqOTt2DzhdKNmM=",
+      "url": "swag.png"
+    },
+    {
       "hash": "sha256-J3LeSWgC3Vyv7A6zg7M\/n4xVIlqwpYqqdOzZZOpHxTo=",
       "url": "Festival.Client.styles.css"
     },
@@ -1809,5 +1813,5 @@
       "url": "Festival.Client.bundle.scp.css"
     }
   ],
-  "version": "Ft\/1c\/L7"
+  "version": "MZREWrmC"
 };

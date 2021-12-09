@@ -113,49 +113,47 @@ using Festival.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
-      
+#line 39 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Login.razor"
+           public int niveau = 0;
 
-    public int niveau = 0;
+        public string text = "error";
 
-    public string text = "error";
+        public string email;
 
-    public string email;
+        public string password;
 
-    public string password;
-
-    public string textbox()
-    {
-        return text;
-
-    }
-    public void opret()
-    {
-        nav.NavigateTo("/opret");
-    }
-
-    public async Task logincheck()
-    {
-
-        niveau = await Http.GetFromJsonAsync<int>($"login/{email}/{password}");
-
-        if (niveau == 1)
+        public string textbox()
         {
-            nav.NavigateTo("/vagtplan");
+            return text;
+
         }
-        if (niveau == 2)
+        public void opret()
         {
-            nav.NavigateTo("/counter");
+            nav.NavigateTo("/opret");
         }
-        if (niveau == 3)
+
+        public async Task logincheck()
         {
-            nav.NavigateTo("/kalender");
-        }
-        else
-        {
-            textbox();
-        }
-    }
+
+            niveau = await Http.GetFromJsonAsync<int>($"login/{email}/{password}");
+
+            if (niveau == 1)
+            {
+                nav.NavigateTo("/vagtplan");
+            }
+            if (niveau == 2)
+            {
+                nav.NavigateTo("/counter");
+            }
+            if (niveau == 3)
+            {
+                nav.NavigateTo("/kalender");
+            }
+            else
+            {
+                textbox();
+            }
+        } 
 
 #line default
 #line hidden

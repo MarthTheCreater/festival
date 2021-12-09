@@ -96,45 +96,14 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(LoginLayout))]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/opret")]
-    public partial class Opret : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Opslagstavle")]
+    public partial class Opsalgstavle : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 20 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Opret.razor"
-      
-    private string email;
-    private string password;
-    private string navn;
-    private string tlf;
-    private string adgangsID;
-
-
-    private int adgang = 0;
-
-    public async Task opretbruger()
-    {
-
-        adgang = await Http.GetFromJsonAsync<int>($"opretbruger/{email}/{password}");
-
-        if (adgang == 1)
-        {
-            nav.NavigateTo("/vagtplan");
-        }
-
-    }
-
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager nav { get; set; }
     }
 }
 #pragma warning restore 1591

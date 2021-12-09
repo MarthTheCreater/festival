@@ -656,3 +656,7 @@
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/service-worker-assets.js
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Opret.razor.g.cs
 /Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Opret.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Hjem.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Opsalgstavle.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Hjem.razor.g.cs
+/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/obj/Debug/net5.0/Razor/Pages/Opsalgstavle.razor.g.cs

@@ -112,7 +112,7 @@ using Festival.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 56 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
+#line 62 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
        
     public Bruger[] brugere;
     public Vagter[] vagterne;
@@ -127,14 +127,14 @@ using Festival.Shared.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 112 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
+#line 118 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/FetchData.razor"
            
-    
 
-protected override async Task OnInitializedAsync()
-{
-    vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
-}
+
+    protected override async Task OnInitializedAsync()
+    {
+        vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
+    }
 
 
 #line default

@@ -104,19 +104,6 @@ using Radzen.Blazor;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 9 "/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/Festival/Client/Pages/Counter.razor"
-       
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591
