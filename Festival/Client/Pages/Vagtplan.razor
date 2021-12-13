@@ -2,10 +2,11 @@
 @using Festival.Shared.Models
 @inject HttpClient Http
 <html>
+
 <body>
+
     <img src="swag.png" width="124" height="124" style="float:right">
-
-
+    
     <h1>Vagtplan</h1>
 
     @if (vagterne == null)
@@ -117,10 +118,9 @@
             }
         }*@
 
-
-    protected override async Task OnInitializedAsync()
-    {
-        vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
-    }
+protected override async Task OnInitializedAsync()
+{
+    vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
+}
 
 }
