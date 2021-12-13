@@ -30,22 +30,17 @@ namespace Festival.Server.Controllers
             return conn;
         }
 
-        [HttpGet("{hid}/{pw}/{plvl}")]
-        public async Task<ActionResult<int>> GetLogin(int hid, string pw, string plvl)
+        [HttpPost]
+        public async Task OpretFrivillig(Bruger b)
         {
            
                 using (var conne = OpenConnection(_connection))
                 {
-                    var query = @"select oprettelse_frillig(@holdId,@powerlvl,@password)";
-                    var values = new { holdId = hid, powerlvl = plvl, password = pw };
+                    var query = @"call oprettelse_frivillig(@holdId,@password,@powerlvl)";
+                    var values = new { holdId = b.holdId, password = b.password, powerlvl = b.powerlvl };
 
-                    var result = await conne.QueryAsync<int>(query, values);
-                    return Ok(result);
+                    await conne.ExecuteAsync(query, values);
                 }
-           
         }
     }
-
-
-
 }

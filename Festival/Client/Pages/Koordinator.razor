@@ -1,4 +1,5 @@
-﻿@page "/koordinator"
+﻿@page "/ko"
+@using Festival.Shared.Models;
 @inject NavigationManager nav
 @inject HttpClient Http
 @layout LoginLayout
@@ -8,26 +9,24 @@
 
     <div class="login">
         <label>HoldId</label>
-        <input type="text" id="navn" class="login" name="holdId"  @bind="holdId">
+        <input type="text" id="navn" class="login" name="holdId"  @bind="b.holdId">
         <label>Password</label>
-        <input type="text" id="email" class="login" name="password"  @bind="password">
+        <input type="text" id="email" class="login" name="password"  @bind="b.password">
         <label>Adgangsniveau</label>
-        <input type="text" id="tlf" class="login" name="powerlvl"  @bind="powerlvl">
+        <input type="text" id="tlf" class="login" name="powerlvl"  @bind="b.powerlvl">
         <input type="submit" class="registrering" value="Opret bruger" @onclick="opretfrivillig">
     </div>
 </body>
 </html>
 
 @code{
-    private int holdId;
-    private string password;
-    private int powerlvl;
+    private Bruger b = new();
 
 
     public async Task opretfrivillig()
     {
 
-        await Http.GetFromJsonAsync<int>($"koordinator/{holdId}/{powerlvl}/{password}");
+        await Http.PostAsJsonAsync($"koordinatorOpretBruger", b);
 
     }
 }
