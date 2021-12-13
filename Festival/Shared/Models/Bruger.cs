@@ -20,9 +20,9 @@ namespace Festival.Shared.Models
 
         public string password { get; set; }
 
-        public int rolleId { get; set; }
+        public string kompetencer { get; set; }
 
-        public Bruger(int brugerId, string navn, int tlf, string email, int holdId, string password, int rolleId)
+        public Bruger(int brugerId, string navn, int tlf, string email, int holdId, string password, string kompetencer)
         {
             this.brugerId = brugerId;
 
@@ -36,7 +36,7 @@ namespace Festival.Shared.Models
 
             this.password = password;
 
-            this.rolleId = rolleId;
+            this.kompetencer = kompetencer;
 
         }
 
