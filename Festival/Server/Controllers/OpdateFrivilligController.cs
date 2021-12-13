@@ -15,10 +15,10 @@ namespace Festival.Server.Controllers
     [Route("[controller]")]
     [ApiController]
 
-    public class KoordinatorOpretBrugerController : ControllerBase
+    public class OpdateFrivilligController : ControllerBase
     {
         private readonly string _connection;
-        public KoordinatorOpretBrugerController(IConfiguration configuration)
+        public OpdateFrivilligController(IConfiguration configuration)
         {
             _connection = configuration.GetConnectionString("Admin");
         }
@@ -30,19 +30,19 @@ namespace Festival.Server.Controllers
             return conn;
         }
 
-        [HttpGet("{hid}/{pw}/{plvl}")]
-        public async Task<ActionResult<int>> GetLogin(int hid, string pw, string plvl)
+        [HttpGet("{n}/{tlf}/{em}/{pw}")]
+        public async Task<ActionResult<int>> GetLogin(string n, int tlf, string em, string pw)
         {
-           
-                using (var conne = OpenConnection(_connection))
-                {
-                    var query = @"select oprettelse_frillig(@holdId,@powerlvl,@password)";
-                    var values = new { holdId = hid, powerlvl = plvl, password = pw };
 
-                    var result = await conne.QueryAsync<int>(query, values);
-                    return Ok(result);
-                }
-           
+            using (var conne = OpenConnection(_connection))
+            {
+                var query = @"select opdate_frillig(@navn,@tlf,@email,@password)";
+                var values = new { navn = n, tlf = tlf, email = em, password = pw };
+
+                var result = await conne.QueryAsync<int>(query, values);
+                return Ok(result);
+            }
+
         }
     }
 

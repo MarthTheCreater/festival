@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uoq/29D7N55k9bjZBprDlQZBk2gyqfisc0bqRZAzcPt9YB6gy2T9q7B1BaQr6ZG9PoDaa83FxvxdrioKYIBMVA==",
+  "dgSpecHash": "enpnZZGFFBZWW/g5CRJHFlGLkW1yeZqyPxG9cnZnA2kYC8seRSs2AuVQzpniH0MkpQtUwFFMmoMKHu87smRLjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emili\\Desktop\\Skole\\2Semester\\Projekt\\Festival\\Shared\\Festival.Shared.csproj",
+  "projectFilePath": "C:\\Users\\emili\\Desktop\\Skole\\2Semester\\projekt\\Festival\\Shared\\Festival.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emili\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.0\\microsoft.aspnetcore.authorization.5.0.0.nupkg.sha512",
@@ -18,11 +18,9 @@
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.jsinterop\\5.0.0\\microsoft.jsinterop.5.0.0.nupkg.sha512",
-    "C:\\Users\\emili\\.nuget\\packages\\npgsql\\5.0.11\\npgsql.5.0.11.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\radzen.blazor\\3.13.5\\radzen.blazor.3.13.5.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
-    "C:\\Users\\emili\\.nuget\\packages\\system.linq.dynamic.core\\1.2.12\\system.linq.dynamic.core.1.2.12.nupkg.sha512",
-    "C:\\Users\\emili\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    "C:\\Users\\emili\\.nuget\\packages\\system.linq.dynamic.core\\1.2.12\\system.linq.dynamic.core.1.2.12.nupkg.sha512"
   ],
   "logs": []
 }
