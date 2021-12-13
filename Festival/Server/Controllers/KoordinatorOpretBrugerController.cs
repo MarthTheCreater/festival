@@ -33,21 +33,16 @@ namespace Festival.Server.Controllers
         [HttpGet("{hid}/{pw}/{plvl}")]
         public async Task<ActionResult<int>> GetLogin(int hid, string pw, string plvl)
         {
-            try
-            {
+           
                 using (var conne = OpenConnection(_connection))
                 {
-                    var query = @"select opret_frillig(@holdId,@powerlvl,@password)";
+                    var query = @"select oprettelse_frillig(@holdId,@powerlvl,@password)";
                     var values = new { holdId = hid, powerlvl = plvl, password = pw };
 
                     var result = await conne.QueryAsync<int>(query, values);
-                    return Ok(result.First());
+                    return Ok(result);
                 }
-            }
-            catch (Exception e)
-            {
-                return StatusCode(500, e.Message);
-            }
+           
         }
     }
 
