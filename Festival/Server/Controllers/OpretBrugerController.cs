@@ -30,15 +30,15 @@ namespace Festival.Server.Controllers
             return conn;
         }
 
-        [HttpGet("{n}/{em}/{tlf}/{pw}/{aid}")]
-        public async Task<ActionResult<int>> GetLogin(int aid, string n, string em, string pw, int tlf)
+        [HttpGet("{n}/{em}/{tlf}/{pw}")]
+        public async Task<ActionResult<int>> GetLogin(string n, string em, string pw, int tlf)
         {
             try
             {
                 using (var conne = OpenConnection(_connection))
                 {
-                    var query = @"select opret_frillig(@adgangsID,@navn,@email,@password,@telefonnummer)";
-                    var values = new { adgangsID = aid, navn = n, email = em, password = pw, telefonnummer = tlf };
+                    var query = @"select opret_frillig(@navn,@email,@password,@telefonnummer)";
+                    var values = new {navn = n, email = em, password = pw, telefonnummer = tlf };
 
                     var result = await conne.QueryAsync<int>(query, values);
                     return Ok(result.First());
