@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{3D1A470E-ED06-485C-A388-5DDC0F6F0CA9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Festival/Shared/.gitignore">
     <Files>
       <File FileName="Festival/Client/Pages/Login.razor" Line="23" Column="25" />
       <File FileName="Festival/Client/Pages/Koordinator.razor" Line="15" Column="67" />
@@ -7,13 +7,16 @@
       <File FileName="Festival/Client/Pages/FetchData.razor" Line="1" Column="1" />
       <File FileName="Festival/Server/.gitignore" Line="2" Column="5" />
       <File FileName=".gitignore" Line="2" Column="1" />
+      <File FileName="Festival/Server/appsettings.json" Line="1" Column="1" />
+      <File FileName="Festival/Shared/.gitignore" Line="2" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Festival" expanded="True">
-            <Node name="Solution Items" expanded="True">
-              <Node name="/Users/martinjensen/Documents/ITA/ITA 2. semester/Festival/.gitignore" selected="True" />
+            <Node name="Festival.Client" expanded="True" />
+            <Node name="Festival.Shared" expanded="True">
+              <Node name=".gitignore" selected="True" />
             </Node>
           </Node>
         </State>
@@ -28,7 +31,7 @@
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="default" Name="default">
       <Items>
-        <StartupItem ItemId="{62929DE0-43B2-49E6-8B37-2480577CBEF1}" ItemName="Festival.Client" ConfigurationId="Festival" />
+        <StartupItem ItemId="{62929DE0-43B2-49E6-8B37-2480577CBEF1}" ItemName="Festival.Client" />
         <StartupItem ItemId="{3D1A470E-ED06-485C-A388-5DDC0F6F0CA9}" ItemName="Festival.Server" ConfigurationId="Default" />
       </Items>
     </MultiItemSolutionRunConfiguration>
