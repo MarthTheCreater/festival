@@ -15,6 +15,8 @@ namespace Festival.Server.Controllers
     [Route("[controller]")]
     [ApiController]
 
+
+
     public class KoordinatorOpretBrugerController : ControllerBase
     {
         private readonly string _connection;
