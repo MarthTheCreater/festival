@@ -1,13 +1,15 @@
 ﻿@page "/vagtplan"
 @using Festival.Shared.Models
 @inject HttpClient Http
+@inject NavigationManager nav
+
 <html>
 
 <body>
 
     <img src="swag.png" width="124" height="124" style="float:right">
-    
-    <h1>Vagtplan</h1>
+
+    <h1>Frivillige oversigt</h1>
 
     @if (vagterne == null)
     {
@@ -15,112 +17,98 @@
     }
     else
     {
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Mandag</th>
-                    <th>Tirsdag</th>
-                    <th>Onsdag</th>
-                    <th>Torsdag</th>
-                    <th>Fredag</th>
-                    <th>Lørdag</th>
-                    <th>Søndag</th>
-                </tr>
+        <head>
+            <style>
+                .tableFixHead {
+                    overflow-y: auto;
+                    height: 450px;
+                    overflow-x: auto;
+                    width: 1200px;
+                    border-radius: 0.5%;
+                }
 
-
-            </thead>
-            <tbody>
-                <tr>
-
-                    @foreach (var vagter in vagterne)
-                    {
-                        {
-                            <td style="padding: 10px; border: 3px solid ">
-                                <p>Starttid:</p>
-                                @vagter.starttidspunkt<br />
-                                <br />
-
-                                <p>Sluttid:</p>
-                                @vagter.sluttidspunkt<br />
-                                <br />
-
-                                <p>Arbejdsopgave:</p>
-                                @vagter.beskrivelse<br />
-                                <br />
-
-                                <p>Antal frivillige:</p>
-                                @vagter.kap<br />
-                            </td>
-                        }
+                    .tableFixHead thead th {
+                        position: sticky;
+                        top: 0;
                     }
-                </tr>
-            </tbody>
-        </table>
+
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                td {
+                    padding: 8px 16px;
+                    border: 1px solid #ccc;
+                }
+
+                th {
+                    padding: 8px 16px;
+                    border: 1px solid #ccc;
+                    background: #ffffff;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dag</th>
+                            <th>Starttid</th>
+                            <th>Sluttidspunktet</th>
+                            <th>Opgave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>                              
+                                <td>@vagt.dag</td>
+                                <td>@vagt.starttidspunkt</td>
+                                <td>@vagt.sluttidspunkt</td>
+                                <td>@vagt.opgave</td>
+                            </tr>
+                        }
+
+                        
+                    </tbody>
+                </table>
+            </div>
+        </body>
     }
 </body>
 </html>
 
 @code {
-    public Bruger[] brugere;
+
+    public void chooser()
+    {
+        if (vischooser > 0)
+        {
+            show();
+        }
+    }
+
+    public int vischooser = 0;
+
+    public int clik()
+    {
+        return (vischooser = vischooser + 1);
+    }
+
+    public object show()
+    {
+        return vagterne.First();
+    }
+
+
     public Vagter[] vagterne;
-    public Roller[] rollerne;
-    public Frivillige[] defrivillige;
-    public Koordinator[] koordinators;
-    public Hold[] holdene;
 
-    @*public string mandag = "mandag";
-
-        public void show(List<Vagter> text)
-        {
-            foreach (var vagt in vagterne)
-            {
-                    <td style="padding: 10px; border: 3px solid ">
-                        vagt.dag<br />
-                        vagt.starttidspunkt<br />
-                        vagt.sluttidspunkt<br />
-                    </td>
-            }
-        }
-        public void liste()
-        {
-            show(vagterne.ToList());
-        }
-
-        public void dag()
-        {
-            foreach (var vagt in vagterne)
-            {
-                if (vagt.dag == mandag)
-                {
-                    show(vagterne.ToList());
-                }
-            }
-        }*@
-
-    @*public async Task fedliste()
-        {
-          foreach (var vagter in vagterne)
-            {
-
-        <tr>
-
-        <td style="padding: 10px; border: 3px solid ">
-            vagter.beskrivelse<br />
-            vagter.starttidspunkt<br />
-            vagter.sluttidspunkt<br />
-            vagter.kap<br />
-            vagter.ledig<br />
-        </td>
-
-
-        </tr>
-
-            }
-        }*@
-
-protected override async Task OnInitializedAsync()
-{
-    vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
-}
+    protected override async Task OnInitializedAsync()
+    {
+        vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
+    }
 
 }
