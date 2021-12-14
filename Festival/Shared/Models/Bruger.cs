@@ -12,7 +12,7 @@ namespace Festival.Shared.Models
 
         public string navn { get; set; }
 
-        public Int64 tlf { get; set; }
+        public int tlf { get; set; }
        
         public string email { get; set; }
 
@@ -24,7 +24,7 @@ namespace Festival.Shared.Models
 
         public int powerlvl { get; set; }
 
-        public Bruger(int brugerId, string navn, Int64 tlf, string email, int holdId, string password, string kompetencer, int powerlvl)
+        public Bruger(int brugerId, string navn, int tlf, string email, int holdId, string password, string kompetencer, int powerlvl)
         {
             this.brugerId = brugerId;
 
