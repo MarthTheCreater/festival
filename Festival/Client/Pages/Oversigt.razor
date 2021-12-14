@@ -1,0 +1,89 @@
+﻿@page "/oversigt"
+@using Festival.Shared.Models
+@inject HttpClient Http
+<html>
+ 
+<body>
+
+    <img src="swag.png" width="124" height="124" style="float:right">
+
+    <h1>Frivillige oversigt</h1>
+
+    @if (brugere == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <head>
+            <style>
+                .tableFixHead {
+                    overflow-y: auto;
+                    height: 450px;
+                    overflow-x: auto;
+                    width: 1200px;
+                    border-radius: 0.5%;
+                }
+
+                    .tableFixHead thead th {
+                        position: sticky;
+                        top: 0;
+                    }
+
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                td {
+                    padding: 8px 16px;
+                    border: 1px solid #ccc;
+                }
+
+                th {
+                    padding: 8px 16px;
+                    border: 1px solid #ccc;
+                    background: #ffffff;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Navn</th>
+                            <th>Telefonnummer</th>
+                            <th>E-mail</th>
+                            <th>Kompetencer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var bruger in brugere)
+                        {
+                            <tr>
+                                <td>@bruger.navn</td>
+                                <td>@bruger.tlf</td>
+                                <td>@bruger.email</td>
+                                <td>@bruger.kompetencer</td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </body>
+    }
+</body>
+</html>
+
+    @code {
+        public Bruger[] brugere;
+
+        protected override async Task OnInitializedAsync()
+        {
+            brugere = await Http.GetFromJsonAsync<Bruger[]>("Bruger");
+        }
+
+    }
