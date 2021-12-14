@@ -2,30 +2,35 @@
 @inject NavigationManager nav
 @inject HttpClient Http
 @layout LoginLayout
+@using Festival.Shared.Models
 <html>
 <body>
     <img src="swag.png" width="124" height="124" style="float:right">
 
     <div class="login">
-        <input type="text" id="navn" class="login" name="navn" placeholder="navn" @bind="navn">
-        <input type="text" id="email" class="login" name="email" placeholder="email" @bind="email">
-        <input type="text" id="tlf" class="login" name="telefonnummer" placeholder="telefonnummer" @bind="tlf">
-        <input type="text" id="password" class="login" name="password" placeholder="password" @bind="password">
+        <label>Navn</label>
+        <input type="text" id="navn" class="login" name="navn" placeholder="" @bind="b.navn">
+        <label>telefonnummer</label>
+        <input type="text" id="tlf" class="login" name="telefonnummer" placeholder="" @bind="b.tlf">
+        <label>Email</label>
+        <input type="text" id="email" class="login" name="email" placeholder="" @bind="b.email">
+        <label>Password</label>
+        <input type="text" id="password" class="login" name="password" placeholder="" @bind="b.password">
+
         <input type="submit" class="registrering" value="Opret bruger" @onclick="opretbruger">
     </div>
 </body>
 </html>
 
+
 @code{
-    private string email;
-    private string password;
-    private string navn;
-    private string tlf;
+    private Bruger b = new();
+
 
     public async Task opretbruger()
     {
 
-            await Http.GetFromJsonAsync<int>($"opretbruger/{navn}/{email}/{tlf}/{password}");
+        await Http.PostAsJsonAsync($"OpretBruger", b);
 
     }
 }
