@@ -37,8 +37,8 @@ namespace Festival.Server.Controllers
 
             using (var conne = OpenConnection(_connection))
             {
-                var query = @"call opret_frivillige(@navn,@email,@tlf,@password)";
-                var values = new { navn = b.navn, email = b.email, tlf = b.tlf, password = b.password };
+                var query = @"call opret_frivillige(@navn,@email,@tlf,@password,@kompetencer)";
+                var values = new { navn = b.navn, email = b.email, tlf = b.tlf, password = b.password, kompetencer= b.kompetencer };
 
                 await conne.ExecuteAsync(query, values);
             }
