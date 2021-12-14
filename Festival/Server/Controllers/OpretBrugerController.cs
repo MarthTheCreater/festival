@@ -30,23 +30,17 @@ namespace Festival.Server.Controllers
             return conn;
         }
 
-        [HttpGet("{n}/{em}/{tlf}/{pw}")]
-        public async Task<ActionResult<int>> GetLogin(string n, string em, string pw, int tlf)
-        {
-            try
-            {
-                using (var conne = OpenConnection(_connection))
-                {
-                    var query = @"select opret_frillig(@navn,@email,@password,@telefonnummer)";
-                    var values = new {navn = n, email = em, password = pw, telefonnummer = tlf };
 
-                    var result = await conne.QueryAsync<int>(query, values);
-                    return Ok(result.First());
-                }
-            }
-            catch (Exception e)
+        [HttpPost]
+        public async Task OpretBruger(Bruger b)
+        {
+
+            using (var conne = OpenConnection(_connection))
             {
-                return StatusCode(500, e.Message);
+                var query = @"call opret_frivillige(@navn,@tlf,@email,@password)";
+                var values = new { navn = b.navn, tlf = b.tlf, email = b.email, password = b.password };
+
+                await conne.ExecuteAsync(query, values);
             }
         }
     }
