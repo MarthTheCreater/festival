@@ -3,36 +3,81 @@
 @inject HttpClient Http
 @inject NavigationManager nav
 
-
 <html>
+
 <body>
 
     <img src="swag.png" width="124" height="124" style="float:right">
 
-    <h1>Vagtplan</h1>
-
-
+    <h1>Frivillige oversigt</h1>
 
     @if (vagterne == null)
     {
-        <p><em>Loading...</em></p>}
+        <p><em>Loading...</em></p>
+    }
     else
     {
-        <div class="tab">
-            <button class="tablinks" onclick="@clik()">Mandag</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-        </div>
+        <head>
+            <style>
+                .tableFixHead {
+                    overflow-y: auto;
+                    height: 450px;
+                    overflow-x: auto;
+                    width: 1200px;
+                    border-radius: 0.5%;
+                }
 
-        <div id="Mandag" class="tabcontent">
-            <h3>Mandag</h3>
-            <p>@clik()</p>
-        </div>
+                    .tableFixHead thead th {
+                        position: sticky;
+                        top: 0;
+                    }
+
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                td {
+                    padding: 8px 16px;
+                    border: 1px solid #ccc;
+                }
+
+                th {
+                    padding: 8px 16px;
+                    border: 1px solid #ccc;
+                    background: #ffffff;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dag</th>
+                            <th>Starttid</th>
+                            <th>Sluttidspunktet</th>
+                            <th>Opgave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>                              
+                                <td>@vagt.dag</td>
+                                <td>@vagt.starttidspunkt</td>
+                                <td>@vagt.sluttidspunkt</td>
+                                <td>@vagt.opgave</td>
+                            </tr>
+                        }
+
+                        
+                    </tbody>
+                </table>
+            </div>
+        </body>
     }
-    
-
-
-
 </body>
 </html>
 
