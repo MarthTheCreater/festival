@@ -11,7 +11,6 @@
         <input type="text" id="email" class="login" name="email" placeholder="email" @bind="email">
         <input type="text" id="tlf" class="login" name="telefonnummer" placeholder="telefonnummer" @bind="tlf">
         <input type="text" id="password" class="login" name="password" placeholder="password" @bind="password">
-        <input type="text" id="adgangsID" class="login" name="adgangsID" placeholder="adgangsID" @bind="adgangsID">
         <input type="submit" class="registrering" value="Opret bruger" @onclick="opretbruger">
     </div>
 </body>
@@ -22,19 +21,11 @@
     private string password;
     private string navn;
     private string tlf;
-    private string adgangsID;
-
-    private int adgang = 0;
 
     public async Task opretbruger()
     {
 
-        adgang = await Http.GetFromJsonAsync<int>($"opretbruger/{email}/{password}");
-
-        if (adgang == 1)
-        {
-            nav.NavigateTo("/vagtplan");
-        }
+            await Http.GetFromJsonAsync<int>($"opretbruger/{navn}/{email}/{tlf}/{password}");
 
     }
 }
