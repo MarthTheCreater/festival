@@ -8,8 +8,27 @@
     <img src="swag.png" width="124" height="124" style="float:right">
     <div class="sidenav">
         <div class="login-main-text">
-            <h1>kalender</h1>
+            <h1>Bekræft vagt</h1>
+
+            <h2>Ønsker du at bekræfte denne vagt?</h2>
+            <button @onclick="nejknap">Ja</button>
+            <button @onclick="nejknap">Nej</button>
+
         </div>
     </div>
 </body>
 </html>
+@code{
+    @*private string text = "Du har taget denne vagt";
+
+    private string ja()
+    {
+        text;
+    }*@
+
+    private void nejknap()
+    {
+        nav.NavigateTo("/vagtplan");
+    }
+
+}

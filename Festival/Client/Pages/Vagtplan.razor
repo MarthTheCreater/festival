@@ -9,7 +9,8 @@
 
     <img src="swag.png" width="124" height="124" style="float:right">
 
-        <h1>Vagtplan</h1> <button type="submit" @onclick="opret" class="btn btn-secondary" style="float:right">Register</button>
+    <h1>Frivillige oversigt</h1>
+    <h2>Vagtplan for mandag 6/6-2022</h2>
 
     @if (vagterne == null)
     {
@@ -57,22 +58,24 @@
                         <tr>
                             <th>Dag</th>
                             <th>Starttid</th>
-                            <th>Sluttidspunktet</th>
+                            <th>Sluttidspunkt</th>
                             <th>Opgave</th>
+                            <th>Antal frivillige</th>
+                            <th>Ledig</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var vagt in vagterne)
                         {
-                            <tr>
-                                <td>@vagt.dag</td>
-                                <td>@vagt.starttidspunkt</td>
-                                <td>@vagt.sluttidspunkt</td>
-                                <td>@vagt.opgave</td>
-                            </tr>
+                        <tr>
+                            <td>@vagt.dag</td>
+                            <td>@vagt.starttidspunkt</td>
+                            <td>@vagt.sluttidspunkt</td>
+                            <td>@vagt.beskrivelse</td>
+                            <td>@vagt.kap</td>
+                            <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>                            
+                        </tr>
                         }
-
-
                     </tbody>
                 </table>
             </div>
@@ -81,7 +84,10 @@
 </body>
 </html>
 
+
+
 @code {
+      
     public Vagter[] vagterne;
 
     protected override async Task OnInitializedAsync()
@@ -89,8 +95,4 @@
         vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
     }
 
-    public void opret()
-        {
-            nav.NavigateTo("/koordinator");
-        }
-    }
+}
