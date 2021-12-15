@@ -1,15 +1,18 @@
-﻿@page "/oversigt"
+﻿@page "/dinevagter"
 @using Festival.Shared.Models
 @inject HttpClient Http
+@inject NavigationManager nav
+
 <html>
- 
+
 <body>
 
     <img src="swag.png" width="124" height="124" style="float:right">
 
-    <h1>Bruger oversigt</h1>
+    <h1>Frivillige oversigt</h1>
+    <h2>Vagtplan for mandag 6/6-2022</h2>
 
-    @if (brugere == null)
+    @if (vagterne == null)
     {
         <p><em>Loading...</em></p>
     }
@@ -53,22 +56,27 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Navn</th>
-                            <th>Telefonnummer</th>
-                            <th>E-mail</th>
-                            <th>Kompetencer</th>
+                            <th>Dag</th>
+                            <th>Starttid</th>
+                            <th>Sluttidspunkt</th>
+                            <th>Opgave</th>
+                            <th>Antal frivillige</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var bruger in brugere)
+                        @foreach (var vagt in vagterne)
                         {
+                            if (vagt.vagterId == 1)
+                            {
                             <tr>
-                                <td>@bruger.navn</td>
-                                <td>@bruger.tlf</td>
-                                <td>@bruger.email</td>
-                                <td>@bruger.kompetencer</td>
-
+                                <td>@vagt.dag</td>
+                                <td>@vagt.starttidspunkt</td>
+                                <td>@vagt.sluttidspunkt</td>
+                                <td>@vagt.beskrivelse</td>
+                                <td>@vagt.kap</td>                                
                             </tr>
+                            }
                         }
                     </tbody>
                 </table>
@@ -78,12 +86,15 @@
 </body>
 </html>
 
-    @code {
-        public Bruger[] brugere;
 
-        protected override async Task OnInitializedAsync()
-        {
-            brugere = await Http.GetFromJsonAsync<Bruger[]>("Bruger");
-        }
 
+@code {
+
+    private Vagter[] vagterne;
+
+    protected override async Task OnInitializedAsync()
+    {
+        vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
     }
+
+}

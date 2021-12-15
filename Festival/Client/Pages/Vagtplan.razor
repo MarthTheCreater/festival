@@ -52,33 +52,168 @@
         </head>
 
         <body>
+
             <div class="tableFixHead">
                 <table>
                     <thead>
                         <tr>
-                            <th>Dag</th>
-                            <th>Starttid</th>
-                            <th>Sluttidspunkt</th>
-                            <th>Opgave</th>
-                            <th>Antal frivillige</th>
-                            <th>Ledig</th>
+                            <th>Mandag</th>
+                            <th>Vagten er ledig</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var vagt in vagterne)
                         {
-                        <tr>
-                            <td>@vagt.dag</td>
-                            <td>@vagt.starttidspunkt</td>
-                            <td>@vagt.sluttidspunkt</td>
-                            <td>@vagt.beskrivelse</td>
-                            <td>@vagt.kap</td>
-                            <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>                            
-                        </tr>
+                            <tr>
+                                @if (vagt.dag.ToLower() == "mandag")
+                                {
+                                    <td>@vagt.starttidspunkt <br />@vagt.sluttidspunkt <br />@vagt.beskrivelse <br />@vagt.kap</td>
+                                    <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>
+                                }
+                            </tr>
                         }
                     </tbody>
                 </table>
             </div>
+
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tirsdag</th>
+                            <th>Vagten er ledig</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>
+                                @if (vagt.dag.ToLower() == "tirsdag")
+                                {
+                                    <td>@vagt.starttidspunkt <br />@vagt.sluttidspunkt <br />@vagt.beskrivelse <br />@vagt.kap</td>
+                                    <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Onsdag</th>
+                            <th>Vagten er ledig</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>
+                                @if (vagt.dag.ToLower() == "onsdag")
+                                {
+                                    <td>@vagt.starttidspunkt <br />@vagt.sluttidspunkt <br />@vagt.beskrivelse <br />@vagt.kap</td>
+                                    <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Torsdag</th>
+                            <th>Vagten er ledig</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>
+                                @if (vagt.dag.ToLower() == "torsdag")
+                                {
+                                    <td>@vagt.starttidspunkt <br />@vagt.sluttidspunkt <br />@vagt.beskrivelse <br />@vagt.kap</td>
+                                    <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fredag</th>
+                            <th>Vagten er ledig</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>
+                                @if (vagt.dag.ToLower() == "fredag")
+                                {
+                                    <td>@vagt.starttidspunkt <br />@vagt.sluttidspunkt <br />@vagt.beskrivelse <br />@vagt.kap</td>
+                                    <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lørdag</th>
+                            <th>Vagten er ledig</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>
+                                @if (vagt.dag.ToLower() == "lørdag")
+                                {
+                                    <td>@vagt.starttidspunkt <br />@vagt.sluttidspunkt <br />@vagt.beskrivelse <br />@vagt.kap</td>
+                                    <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Søndag</th>
+                            <th>Vagten er ledig</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vagt in vagterne)
+                        {
+                            <tr>
+                                @if (vagt.dag.ToLower() == "søndag")
+                                {
+                                    <td>@vagt.starttidspunkt <br />@vagt.sluttidspunkt <br />@vagt.beskrivelse <br />@vagt.kap</td>
+                                    <td><a href="/kalender" style="color: #0000FF; text-decoration: none">Tilmeld vagt</a></td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
         </body>
     }
 </body>
@@ -87,8 +222,8 @@
 
 
 @code {
-      
-    public Vagter[] vagterne;
+
+    private Vagter[] vagterne;
 
     protected override async Task OnInitializedAsync()
     {
