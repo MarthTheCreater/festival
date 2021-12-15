@@ -9,7 +9,7 @@
 
     <img src="swag.png" width="124" height="124" style="float:right">
 
-    <h1>Frivillige oversigt</h1>
+        <h1>Vagtplan</h1> <button type="submit" @onclick="opret" class="btn btn-secondary" style="float:right">Register</button>
 
     @if (vagterne == null)
     {
@@ -64,7 +64,7 @@
                     <tbody>
                         @foreach (var vagt in vagterne)
                         {
-                            <tr>                              
+                            <tr>
                                 <td>@vagt.dag</td>
                                 <td>@vagt.starttidspunkt</td>
                                 <td>@vagt.sluttidspunkt</td>
@@ -72,7 +72,7 @@
                             </tr>
                         }
 
-                        
+
                     </tbody>
                 </table>
             </div>
@@ -82,28 +82,6 @@
 </html>
 
 @code {
-
-    public void chooser()
-    {
-        if (vischooser > 0)
-        {
-            show();
-        }
-    }
-
-    public int vischooser = 0;
-
-    public int clik()
-    {
-        return (vischooser = vischooser + 1);
-    }
-
-    public object show()
-    {
-        return vagterne.First();
-    }
-
-
     public Vagter[] vagterne;
 
     protected override async Task OnInitializedAsync()
@@ -111,4 +89,8 @@
         vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
     }
 
-}
+    public void opret()
+        {
+            nav.NavigateTo("/koordinator");
+        }
+    }

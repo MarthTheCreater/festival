@@ -5,21 +5,26 @@
 @using Festival.Shared.Models
 <html>
 <body>
-    <img src="swag.png" width="124" height="124" style="float:right">
+    <div>
+        <img src="swag.png" width="124" height="124" style="float:right">
+    </div>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-    <div class="login">
+    <h1 style="padding:30px">Bruger Oprettelse</h1>
+
+    <div class="form-group" style="padding:30px" >
         <label>Navn</label>
-        <input type="text" id="navn" class="login" name="navn" placeholder="" @bind="b.navn">
+        <input type="text" id="navn" class="form-control"style="width:30%" name="navn" placeholder="-" @bind="b.navn">
         <label>Email</label>
-        <input type="text" id="email" class="login" name="email" placeholder="" @bind="b.email">
+        <input type="text" id="email" class="form-control"style="width:30%" name="email" placeholder="-" @bind="b.email">
         <label>telefonnummer</label>
-        <input type="text" id="tlf" class="login" name="telefonnummer" placeholder="" @bind="b.tlf">
+        <input type="text" id="tlf" class="form-control"style="width:30%" name="telefonnummer" placeholder="-" @bind="b.tlf">
         <label>Password</label>
-        <input type="text" id="password" class="login" name="password" placeholder="" @bind="b.password">
+        <input type="text" id="password" class="form-control"style="width:30%" name="password" placeholder="-" @bind="b.password">
         <label>kompetencer</label>
-        <input type="text" id="kompetencer" class="login" name="kompetencer" placeholder="" @bind="b.kompetencer">
-
-        <input type="submit" class="registrering" value="Opret bruger" @onclick="opretbruger">
+        <input type="text" id="kompetencer" class="form-control"style="width:30%" name="kompetencer" placeholder="-" @bind="b.kompetencer">
+        <br>
+        <input type="submit" class="btn btn-secondary" value="Opret bruger" @onclick="opretbruger">
     </div>
 </body>
 </html>
@@ -33,6 +38,8 @@
     {
 
         await Http.PostAsJsonAsync($"OpretBruger", b);
+
+        nav.NavigateTo("/vagtplan");
 
     }
 }

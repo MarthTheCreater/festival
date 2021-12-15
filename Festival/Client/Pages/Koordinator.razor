@@ -1,4 +1,4 @@
-﻿@page "/ko"
+﻿@page "/koordinator"
 @using Festival.Shared.Models;
 @inject NavigationManager nav
 @inject HttpClient Http
@@ -7,14 +7,19 @@
 <body>
     <img src="swag.png" width="124" height="124" style="float:right">
 
-    <div class="login">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <h1 style="padding:30px">Frivillig Oprettelse</h1>
+
+    <div class="login" style="padding:30px">
         <label>HoldId</label>
-        <input type="text" id="navn" class="login" name="holdId"  @bind="b.holdId">
+        <input type="number" id="holdId" class="login" style="width:30%" name="holdId" placeholder="-" @bind="b.holdId">
         <label>Password</label>
-        <input type="text" id="email" class="login" name="password"  @bind="b.password">
+        <input type="text" id="password" class="login" style="width:30%" name="password" placeholder="-" @bind="b.password">
         <label>Adgangsniveau</label>
-        <input type="text" id="tlf" class="login" name="powerlvl"  @bind="b.powerlvl">
-        <input type="submit" class="registrering" value="Opret bruger" @onclick="opretfrivillig">
+        <input type="number" id="powerlvl" class="login" style="width:30%" name="powerlvl" placeholder="-" @bind="b.powerlvl">
+        <br/>
+        <input type="submit" class="registrering" style="width:30%" value="Opret bruger" @onclick="opretfrivillig">
     </div>
 </body>
 </html>
