@@ -1,18 +1,15 @@
-﻿@page "/dinevagter"
+﻿@page "/oversigt"
 @using Festival.Shared.Models
 @inject HttpClient Http
-@inject NavigationManager nav
-
 <html>
-
+ 
 <body>
 
     <img src="swag.png" width="124" height="124" style="float:right">
 
-    <h1>Frivillige oversigt</h1>
-    <h2>Dette er din vagtplan</h2>
+    <h1>Bruger oversigt</h1>
 
-    @if (vagterne == null)
+    @if (brugere == null)
     {
         <p><em>Loading...</em></p>
     }
@@ -56,26 +53,22 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Dag</th>
-                            <th>Starttid</th>
-                            <th>Sluttidspunkt</th>
-                            <th>Opgave</th>
-                            <th>Antal frivillige</th>
-                            
+                            <th>Navn</th>
+                            <th>Telefonnummer</th>
+                            <th>E-mail</th>
+                            <th>Kompetencer</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var vagt in vagterne)
+                        @foreach (var bruger in brugere)
                         {
-                            
                             <tr>
-                                <td>@vagt.dag</td>
-                                <td>@vagt.starttidspunkt</td>
-                                <td>@vagt.sluttidspunkt</td>
-                                <td>@vagt.beskrivelse</td>
-                                <td>@vagt.kap</td>                                
+                                <td>@bruger.navn</td>
+                                <td>@bruger.tlf</td>
+                                <td>@bruger.email</td>
+                                <td>@bruger.kompetencer</td>
+
                             </tr>
-                            
                         }
                     </tbody>
                 </table>
@@ -85,18 +78,12 @@
 </body>
 </html>
 
+    @code {
+        public Bruger[] brugere;
 
+        protected override async Task OnInitializedAsync()
+        {
+            brugere = await Http.GetFromJsonAsync<Bruger[]>("Bruger");
+        }
 
-@code {
-
-    private Vagter v = new();
-    private Bruger b = new();
-
-    private Vagter[] vagterne;
-
-    protected override async Task OnInitializedAsync()
-    {
-        vagterne = await Http.GetFromJsonAsync<Vagter[]>("Vagter");
     }
-
-}
