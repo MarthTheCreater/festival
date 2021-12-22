@@ -3,12 +3,13 @@
 @inject HttpClient Http
 @layout LoginLayout
 @using Festival.Shared.Models
+
 <html>
 <body>
     <div>
         <img src="swag.png" width="124" height="124" style="float:right">
     </div>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
     <h1 style="padding:30px">Bruger Oprettelse</h1>
 
@@ -21,10 +22,11 @@
         <input type="text" id="tlf" class="form-control" style="width:30%" name="telefonnummer" placeholder="-" @bind="b.tlf">
         <label>Password</label>
         <input type="text" id="password" class="form-control" style="width:30%" name="password" placeholder="-" @bind="b.password">
-        <label>kompetencer</label
+        <label>kompetencer</label>
         <p>List kort nogle kompetencer der kunne være relevante.</p>
         <input type="text" id="kompetencer" class="form-control" style="width:30%" name="kompetencer" placeholder="-" @bind="b.kompetencer">
         <br>
+
         <input type="submit" class="btn btn-primary" value="Opret /opdater bruger" @onclick="opretbruger">
         <input type="submit" class="btn btn-secondary" value="Tilbage" @onclick="hjem">
     </div>

@@ -4,10 +4,7 @@
 @layout LoginLayout
 @using Festival.Shared.Models
 
-
 <html>
-
-
 <body>
     <div>
         <img src="swag.png" width="124" height="124" style="float:right">
@@ -21,34 +18,32 @@
     else
     {
 
+        <div class="form-group" style="padding:30px">
 
-<div class="form-group" style="padding:30px">
+            @foreach (var bruger in brugerene)
+            {
+                if (bruger.email == "james@bond")
+                {
 
+                    <h1>Dine oplysninger</h1>
 
-    @foreach (var bruger in brugerene)
-    {
-        if (bruger.email == "james@bond")
-        {
+                    <label>Medarbejder ID</label>
+                    <input type="text" id="ID" class="form-control" style="width:30%" name="ID" placeholder="-" @bind="bruger.brugerId">
+                    <label>Navn</label>
+                    <input type="text" id="navn" class="form-control" style="width:30%" name="navn" placeholder="-" @bind="bruger.navn">
+                    <label>Email</label>
+                    <input type="text" id="email" class="form-control" style="width:30%" name="email" placeholder="-" @bind="bruger.email">
+                    <label>telefonnummer</label>
+                    <input type="text" id="tlf" class="form-control" style="width:30%" name="telefonnummer" placeholder="-" @bind="bruger.tlf">
+                    <label>Kompetencer</label>
+                    <input type="text" id="kompetencer" class="form-control" style="width:30%" name="kompetencer" placeholder="-" @bind="bruger.kompetencer">
+                    <br>
+                    <input type="submit" class="btn btn-primary" value="Rediger oplysninger" @onclick="rediger">
+                    <input type="submit" class="btn btn-secondary" value="Tilbage" @onclick="hjem">
 
-            <h1>Dine oplysninger</h1>
-
-            <label>Medarbejder ID</label>
-            <input type="text" id="ID" class="form-control" style="width:30%" name="ID" placeholder="-" @bind="bruger.brugerId">
-            <label>Navn</label>
-            <input type="text" id="navn" class="form-control" style="width:30%" name="navn" placeholder="-" @bind="bruger.navn">
-            <label>Email</label>
-            <input type="text" id="email" class="form-control" style="width:30%" name="email" placeholder="-" @bind="bruger.email">
-            <label>telefonnummer</label>
-            <input type="text" id="tlf" class="form-control" style="width:30%" name="telefonnummer" placeholder="-" @bind="bruger.tlf">
-            <label>Kompetencer</label>
-            <input type="text" id="kompetencer" class="form-control" style="width:30%" name="kompetencer" placeholder="-" @bind="bruger.kompetencer">
-            <br>
-            <input type="submit" class="btn btn-primary" value="Rediger oplysninger" @onclick="rediger">
-            <input type="submit" class="btn btn-secondary" value="Tilbage" @onclick="hjem">
-
-        }
-    }
-</div>
+                }
+            }
+        </div>
     }
 </body>
 </html>

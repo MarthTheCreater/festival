@@ -4,19 +4,11 @@
 @inject NavigationManager nav
 
 <html>
-
 <body>
 
     <img src="swag.png" width="124" height="124" style="float:right">
 
-    <h1>Frivillige oversigt</h1>
-    <h2>Vagtplan</h2>
-
-    <div class="form-group">
-        <label>Adgangskode</label>
-        <p>skriv adgangskode før du tilmelder dig en vagt.</p>
-        <input type="password" class="form-control" placeholder="" @bind="b.password">
-    </div>
+    <h1>Vagtplan</h1>
 
     @if (vagterne == null)
     {
@@ -35,10 +27,10 @@
                     border-radius: 0.5%;
                 }
 
-                    .tableFixHead thead th {
+                .tableFixHead thead th {
                         position: sticky;
                         top: 0;
-                    }
+                }
 
                 table {
                     border-collapse: collapse;
@@ -221,7 +213,6 @@
 @code {
 
     private Bruger b = new();
-
     private Vagter v = new();
 
 

@@ -3,7 +3,6 @@
 @inject HttpClient Http
 @inject NavigationManager nav
 
-
 <html>
 <body>
     <img src="swag.png" width="124" height="124" style="float:right">
@@ -12,34 +11,32 @@
 
     <h1 style="padding:30px">Opret vagt</h1>
 
-    <div class="login" style="padding:30px">
-        <label>HoldId</label>
-        <input type="number" id="HoldId" class="login" style="width:30%" name="HoldId" min="1" placeholder="-" @bind="v.holdId">
+        <div class="login" style="padding:30px">
+            <label>HoldId</label>
+            <input type="number" id="HoldId" class="login" style="width:30%" name="HoldId" min="1" placeholder="-" @bind="v.holdId">
 
-        <label>Starttidspunkt</label>
-        <p>(skrives i amerikansk format eks: '2022-06-06 15:00'</p>
-        <input type="text" id="Starttid" class="login" style="width:30%" name="Starttidspunkt" placeholder="-" @bind="v.starttidspunkt">
+            <label>Starttidspunkt</label>
+            <p>(skrives i amerikansk format eks: '2022-06-06 15:00'</p>
+            <input type="text" id="Starttid" class="login" style="width:30%" name="Starttidspunkt" placeholder="-" @bind="v.starttidspunkt">
 
-        <label>Sluttidspunkt</label>
-        <input type="text" id="Sluttid" class="login" style="width:30%" name="Sluttidspunkt" placeholder="-" @bind="v.sluttidspunkt">
-        <br />
+            <label>Sluttidspunkt</label>
+            <input type="text" id="Sluttid" class="login" style="width:30%" name="Sluttidspunkt" placeholder="-" @bind="v.sluttidspunkt">
+            <br />
 
-        <label>Beskrivelse</label>
-        <input type="text" id="Beskrivelse" class="login" style="width:30%" name="Beskrivelse" placeholder="-" @bind="v.beskrivelse">
-        <br />
+            <label>Beskrivelse</label>
+            <input type="text" id="Beskrivelse" class="login" style="width:30%" name="Beskrivelse" placeholder="-" @bind="v.beskrivelse">
+            <br />
 
-        <label>Kapacitet</label>
-        <input type="number" id="Kapacitet" class="login" style="width:30%" name="Kapacitet" placeholder="-" @bind="v.kap">
-        <br />
+            <label>Kapacitet</label>
+            <input type="number" id="Kapacitet" class="login" style="width:30%" name="Kapacitet" placeholder="-" @bind="v.kap">
+            <br />
 
-        <label>Dag</label>
-        <input type="text" id="Dag" class="login" style="width:30%" name="Dag" placeholder="-" @bind="v.dag">
-        <br />
+            <label>Dag</label>
+            <input type="text" id="Dag" class="login" style="width:30%" name="Dag" placeholder="-" @bind="v.dag">
+            <br />
        
-
-
-        <input type="submit" class="registrering" style="width:30%" value="Opret vagt" @onclick="OpretVagt">
-    </div>
+            <input type="submit" class="registrering" style="width:30%" value="Opret vagt" @onclick="OpretVagt">
+        </div>
 </body>
 </html>
 
